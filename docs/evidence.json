@@ -1,0 +1,359 @@
+{
+  "generated_at": "2026-03-15T00:38:28.852Z",
+  "total": 50,
+  "passing": 50,
+  "failing": 0,
+  "errors": 0,
+  "results": [
+    {
+      "name": "abstractions/WalletSeed-from-bytes",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/WalletSeed-from-string",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/WalletSeed-is-predicate",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/WalletState-from-string",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/SerializedTransaction-of",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/ProtocolVersion-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/ProtocolVersion-min-max",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/ProtocolVersion-range-within",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/ProtocolVersion-is-predicate",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/NetworkId-well-known",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/SyncProgress-create",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/SyncProgress-strictly-complete",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "abstractions/SyncProgress-not-complete",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/BLSScalar-is-32-bytes",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ScaleBigInt-encode-decode-roundtrip",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ScaleBigInt-zero",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ScaleBigInt-large-value",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ShieldedCoinPublicKey-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ShieldedCoinPublicKey-equality",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ShieldedEncryptionPublicKey-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/ShieldedAddress-composition",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/UnshieldedAddress-hex-roundtrip",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/UnshieldedAddress-equality",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/DustAddress-from-bigint",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/DustAddress-rejects-over-modulus",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/DustAddress-validates-modulus",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/MidnightBech32m-encode-shielded",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/MidnightBech32m-encode-unshielded",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "address-format/MidnightBech32m-roundtrip",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/mnemonic-generates-24-words",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/mnemonic-validates-roundtrip",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/invalid-mnemonic-rejected",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/random-seed-length",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/wallet-from-seed",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/roles-values",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/derive-key-at-index-0",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/different-roles-different-keys",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/different-accounts-different-keys",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/composite-role-keys",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "hd/deterministic-derivation",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "typecheck/abstractions",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/address-format",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/capabilities",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/dust-wallet",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/facade",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/hd",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/node-client",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/prover-client",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/runtime",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "typecheck/utilities",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "typecheck",
+      "detail": null
+    }
+  ]
+}

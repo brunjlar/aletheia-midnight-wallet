@@ -1,0 +1,4 @@
+node_modules/
+workspace/node_modules/
+artifacts/pdf/
+*.pdf

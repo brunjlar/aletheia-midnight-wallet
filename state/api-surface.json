@@ -1,0 +1,2141 @@
+{
+  "extracted_at": "2026-03-15T00:17:06.340Z",
+  "packages": [
+    {
+      "name": "abstractions",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-abstractions",
+      "version": "2.0.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/abstractions/src/index.ts",
+          "symbols": [
+            {
+              "name": "WalletSeed",
+              "kind": "namespace"
+            },
+            {
+              "name": "WalletState",
+              "kind": "namespace"
+            },
+            {
+              "name": "SerializedTransaction",
+              "kind": "namespace"
+            },
+            {
+              "name": "ProtocolState",
+              "kind": "namespace"
+            },
+            {
+              "name": "ProtocolVersion",
+              "kind": "namespace"
+            },
+            {
+              "name": "NetworkId",
+              "kind": "namespace"
+            },
+            {
+              "name": "SyncProgress",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "address-format",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-address-format",
+      "version": "3.0.1",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/address-format/src/index.ts",
+          "symbols": [
+            {
+              "name": "mainnet",
+              "kind": "const"
+            },
+            {
+              "name": "NetworkId",
+              "kind": "type"
+            },
+            {
+              "name": "FormatContext",
+              "kind": "type"
+            },
+            {
+              "name": "Field",
+              "kind": "type"
+            },
+            {
+              "name": "BLSScalar",
+              "kind": "const"
+            },
+            {
+              "name": "ScaleBigInt",
+              "kind": "const"
+            },
+            {
+              "name": "Bech32mSymbol",
+              "kind": "const"
+            },
+            {
+              "name": "HasCodec",
+              "kind": "type"
+            },
+            {
+              "name": "CodecTarget",
+              "kind": "type"
+            },
+            {
+              "name": "MidnightBech32m",
+              "kind": "class"
+            },
+            {
+              "name": "Bech32mCodec",
+              "kind": "class"
+            },
+            {
+              "name": "ShieldedAddress",
+              "kind": "class"
+            },
+            {
+              "name": "ShieldedEncryptionSecretKey",
+              "kind": "class"
+            },
+            {
+              "name": "ShieldedCoinPublicKey",
+              "kind": "class"
+            },
+            {
+              "name": "ShieldedEncryptionPublicKey",
+              "kind": "class"
+            },
+            {
+              "name": "UnshieldedAddress",
+              "kind": "class"
+            },
+            {
+              "name": "DustAddress",
+              "kind": "class"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "capabilities",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-capabilities",
+      "version": "3.1.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/capabilities/src/index.ts",
+          "symbols": [
+            {
+              "name": "InsufficientFundsError",
+              "kind": "class"
+            },
+            {
+              "name": "BalanceRecipe",
+              "kind": "interface"
+            },
+            {
+              "name": "CoinSelection",
+              "kind": "type"
+            },
+            {
+              "name": "BalanceRecipeProps",
+              "kind": "type"
+            },
+            {
+              "name": "getBalanceRecipe",
+              "kind": "const"
+            },
+            {
+              "name": "createCounterOffer",
+              "kind": "const"
+            },
+            {
+              "name": "chooseCoin",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionCostModel",
+              "kind": "interface"
+            },
+            {
+              "name": "CounterOffer",
+              "kind": "class"
+            },
+            {
+              "name": "TokenType",
+              "kind": "type"
+            },
+            {
+              "name": "TokenValue",
+              "kind": "type"
+            },
+            {
+              "name": "CoinRecipe",
+              "kind": "interface"
+            },
+            {
+              "name": "Imbalance",
+              "kind": "type"
+            },
+            {
+              "name": "Imbalances",
+              "kind": "type"
+            },
+            {
+              "name": "PendingTransactionsService",
+              "kind": "type"
+            },
+            {
+              "name": "IndexerClientConnection",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultPendingTransactionsServiceConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "InitParams",
+              "kind": "type"
+            },
+            {
+              "name": "PendingTransactionsServiceImpl",
+              "kind": "class"
+            },
+            {
+              "name": "PendingTransactionsServiceEffect",
+              "kind": "type"
+            },
+            {
+              "name": "PendingTransactionsServiceEffectImpl",
+              "kind": "class"
+            },
+            {
+              "name": "PendingTransactions",
+              "kind": "namespace"
+            },
+            {
+              "name": "ProvingError",
+              "kind": "class"
+            },
+            {
+              "name": "ProvingServiceEffect",
+              "kind": "interface"
+            },
+            {
+              "name": "ProvingService",
+              "kind": "interface"
+            },
+            {
+              "name": "UnboundTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "fromProvingProviderEffect",
+              "kind": "const"
+            },
+            {
+              "name": "fromProvingProvider",
+              "kind": "const"
+            },
+            {
+              "name": "ServerProvingConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "WasmProvingConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultProvingConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "makeServerProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeWasmProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeSimulatorProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeDefaultProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeDefaultProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "makeServerProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "makeWasmProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "makeSimulatorProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "SubmissionEvent",
+              "kind": "const"
+            },
+            {
+              "name": "Finalized",
+              "kind": "type"
+            },
+            {
+              "name": "Submitted",
+              "kind": "type"
+            },
+            {
+              "name": "InBlock",
+              "kind": "type"
+            },
+            {
+              "name": "SubmissionError",
+              "kind": "class"
+            },
+            {
+              "name": "SubmitTransactionMethod",
+              "kind": "type"
+            },
+            {
+              "name": "SubmitTransactionMethodEffect",
+              "kind": "type"
+            },
+            {
+              "name": "SubmissionServiceEffect",
+              "kind": "interface"
+            },
+            {
+              "name": "SubmissionService",
+              "kind": "interface"
+            },
+            {
+              "name": "DefaultSubmissionConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "makeDefaultSubmissionServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeDefaultSubmissionService",
+              "kind": "const"
+            },
+            {
+              "name": "SimulatorSubmissionConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "makeSimulatorSubmissionService",
+              "kind": "const"
+            }
+          ]
+        },
+        {
+          "path": "./balancer",
+          "source_file": "packages/capabilities/src/balancer/index.ts",
+          "symbols": [
+            {
+              "name": "InsufficientFundsError",
+              "kind": "class"
+            },
+            {
+              "name": "BalanceRecipe",
+              "kind": "interface"
+            },
+            {
+              "name": "CoinSelection",
+              "kind": "type"
+            },
+            {
+              "name": "BalanceRecipeProps",
+              "kind": "type"
+            },
+            {
+              "name": "getBalanceRecipe",
+              "kind": "const"
+            },
+            {
+              "name": "createCounterOffer",
+              "kind": "const"
+            },
+            {
+              "name": "chooseCoin",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionCostModel",
+              "kind": "interface"
+            },
+            {
+              "name": "CounterOffer",
+              "kind": "class"
+            },
+            {
+              "name": "TokenType",
+              "kind": "type"
+            },
+            {
+              "name": "TokenValue",
+              "kind": "type"
+            },
+            {
+              "name": "CoinRecipe",
+              "kind": "interface"
+            },
+            {
+              "name": "Imbalance",
+              "kind": "type"
+            },
+            {
+              "name": "Imbalances",
+              "kind": "type"
+            }
+          ]
+        },
+        {
+          "path": "./submission",
+          "source_file": "packages/capabilities/src/submission/index.ts",
+          "symbols": [
+            {
+              "name": "SubmissionEvent",
+              "kind": "const"
+            },
+            {
+              "name": "Finalized",
+              "kind": "type"
+            },
+            {
+              "name": "Submitted",
+              "kind": "type"
+            },
+            {
+              "name": "InBlock",
+              "kind": "type"
+            },
+            {
+              "name": "SubmissionError",
+              "kind": "class"
+            },
+            {
+              "name": "SubmitTransactionMethod",
+              "kind": "type"
+            },
+            {
+              "name": "SubmitTransactionMethodEffect",
+              "kind": "type"
+            },
+            {
+              "name": "SubmissionServiceEffect",
+              "kind": "interface"
+            },
+            {
+              "name": "SubmissionService",
+              "kind": "interface"
+            },
+            {
+              "name": "DefaultSubmissionConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "makeDefaultSubmissionServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeDefaultSubmissionService",
+              "kind": "const"
+            },
+            {
+              "name": "SimulatorSubmissionConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "makeSimulatorSubmissionService",
+              "kind": "const"
+            }
+          ]
+        },
+        {
+          "path": "./pendingTransactions",
+          "source_file": "packages/capabilities/src/pendingTransactions/index.ts",
+          "symbols": [
+            {
+              "name": "PendingTransactionsService",
+              "kind": "type"
+            },
+            {
+              "name": "IndexerClientConnection",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultPendingTransactionsServiceConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "InitParams",
+              "kind": "type"
+            },
+            {
+              "name": "PendingTransactionsServiceImpl",
+              "kind": "class"
+            },
+            {
+              "name": "PendingTransactionsServiceEffect",
+              "kind": "type"
+            },
+            {
+              "name": "PendingTransactionsServiceEffectImpl",
+              "kind": "class"
+            },
+            {
+              "name": "PendingTransactions",
+              "kind": "namespace"
+            }
+          ]
+        },
+        {
+          "path": "./proving",
+          "source_file": "packages/capabilities/src/proving/index.ts",
+          "symbols": [
+            {
+              "name": "ProvingError",
+              "kind": "class"
+            },
+            {
+              "name": "ProvingServiceEffect",
+              "kind": "interface"
+            },
+            {
+              "name": "ProvingService",
+              "kind": "interface"
+            },
+            {
+              "name": "UnboundTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "fromProvingProviderEffect",
+              "kind": "const"
+            },
+            {
+              "name": "fromProvingProvider",
+              "kind": "const"
+            },
+            {
+              "name": "ServerProvingConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "WasmProvingConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultProvingConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "makeServerProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeWasmProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeSimulatorProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeDefaultProvingServiceEffect",
+              "kind": "const"
+            },
+            {
+              "name": "makeDefaultProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "makeServerProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "makeWasmProvingService",
+              "kind": "const"
+            },
+            {
+              "name": "makeSimulatorProvingService",
+              "kind": "const"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dust-wallet",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-dust-wallet",
+      "version": "2.0.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/dust-wallet/src/index.ts",
+          "symbols": [
+            {
+              "name": "DustWalletCapabilities",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletState",
+              "kind": "class"
+            },
+            {
+              "name": "DustWalletAPI",
+              "kind": "type"
+            },
+            {
+              "name": "DustWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletClass",
+              "kind": "interface"
+            },
+            {
+              "name": "DefaultDustConfiguration",
+              "kind": "type"
+            }
+          ]
+        },
+        {
+          "path": "./v1",
+          "source_file": "packages/dust-wallet/src/v1/index.ts",
+          "symbols": [
+            {
+              "name": "PublicKey",
+              "kind": "type"
+            },
+            {
+              "name": "CoreWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletCapabilities",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletState",
+              "kind": "class"
+            },
+            {
+              "name": "DustWalletAPI",
+              "kind": "type"
+            },
+            {
+              "name": "DustWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletClass",
+              "kind": "interface"
+            },
+            {
+              "name": "DefaultDustConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "Keys",
+              "kind": "namespace"
+            },
+            {
+              "name": "Simulator",
+              "kind": "namespace"
+            },
+            {
+              "name": "SyncService",
+              "kind": "namespace"
+            },
+            {
+              "name": "Transacting",
+              "kind": "namespace"
+            },
+            {
+              "name": "Context",
+              "kind": "type"
+            },
+            {
+              "name": "AnyContext",
+              "kind": "type"
+            },
+            {
+              "name": "V1Tag",
+              "kind": "const"
+            },
+            {
+              "name": "DefaultRunningV1",
+              "kind": "type"
+            },
+            {
+              "name": "RunningV1Variant",
+              "kind": "class"
+            },
+            {
+              "name": "BaseV1Configuration",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Configuration",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "V1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Builder",
+              "kind": "type"
+            },
+            {
+              "name": "V1Builder",
+              "kind": "class"
+            },
+            {
+              "name": "Dust",
+              "kind": "type"
+            },
+            {
+              "name": "DustWithNullifier",
+              "kind": "type"
+            },
+            {
+              "name": "DustFullInfo",
+              "kind": "type"
+            },
+            {
+              "name": "DustGenerationDetails",
+              "kind": "type"
+            },
+            {
+              "name": "DustGenerationInfo",
+              "kind": "type"
+            },
+            {
+              "name": "UtxoWithMeta",
+              "kind": "type"
+            },
+            {
+              "name": "AnyTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "UnprovenDustSpend",
+              "kind": "type"
+            },
+            {
+              "name": "NetworkId",
+              "kind": "type"
+            },
+            {
+              "name": "TotalCostParameters",
+              "kind": "type"
+            },
+            {
+              "name": "CoinsAndBalances",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "facade",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-facade",
+      "version": "2.0.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/facade/src/index.ts",
+          "symbols": [
+            {
+              "name": "FinalizedTransactionRecipe",
+              "kind": "type"
+            },
+            {
+              "name": "UnboundTransactionRecipe",
+              "kind": "type"
+            },
+            {
+              "name": "UnprovenTransactionRecipe",
+              "kind": "type"
+            },
+            {
+              "name": "BalancingRecipe",
+              "kind": "type"
+            },
+            {
+              "name": "TokenTransfer",
+              "kind": "interface",
+              "members": [
+                {
+                  "name": "type",
+                  "optional": false,
+                  "kind": "property"
+                },
+                {
+                  "name": "receiverAddress",
+                  "optional": false,
+                  "kind": "property"
+                },
+                {
+                  "name": "amount",
+                  "optional": false,
+                  "kind": "property"
+                }
+              ]
+            },
+            {
+              "name": "ShieldedTokenTransfer",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedTokenTransfer",
+              "kind": "type"
+            },
+            {
+              "name": "CombinedTokenTransfer",
+              "kind": "type"
+            },
+            {
+              "name": "CombinedSwapInputs",
+              "kind": "type"
+            },
+            {
+              "name": "CombinedSwapOutputs",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionIdentifier",
+              "kind": "type"
+            },
+            {
+              "name": "UtxoWithMeta",
+              "kind": "type"
+            },
+            {
+              "name": "FacadeState",
+              "kind": "class"
+            },
+            {
+              "name": "DefaultConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "InitParams",
+              "kind": "type"
+            },
+            {
+              "name": "WalletFacade",
+              "kind": "class"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hd",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-hd",
+      "version": "3.0.1",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/hd/src/index.ts",
+          "symbols": [
+            {
+              "name": "Roles",
+              "kind": "const"
+            },
+            {
+              "name": "Role",
+              "kind": "type"
+            },
+            {
+              "name": "HDWallet",
+              "kind": "class"
+            },
+            {
+              "name": "AccountKey",
+              "kind": "class"
+            },
+            {
+              "name": "RoleKey",
+              "kind": "class"
+            },
+            {
+              "name": "CompositeRoleKey",
+              "kind": "class"
+            },
+            {
+              "name": "mnemonicToWords",
+              "kind": "const"
+            },
+            {
+              "name": "generateMnemonicWords",
+              "kind": "const"
+            },
+            {
+              "name": "joinMnemonicWords",
+              "kind": "const"
+            },
+            {
+              "name": "generateRandomSeed",
+              "kind": "const"
+            },
+            {
+              "name": "validateMnemonic",
+              "kind": "const"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "indexer-client",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-indexer-client",
+      "version": "1.1.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/indexer-client/src/index.ts",
+          "symbols": [
+            {
+              "name": "Connect",
+              "kind": "const"
+            },
+            {
+              "name": "Disconnect",
+              "kind": "const"
+            },
+            {
+              "name": "BlockHash",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionStatus",
+              "kind": "const"
+            },
+            {
+              "name": "DustLedgerEvents",
+              "kind": "const"
+            },
+            {
+              "name": "ShieldedTransactions",
+              "kind": "const"
+            },
+            {
+              "name": "UnshieldedTransactions",
+              "kind": "const"
+            },
+            {
+              "name": "ZswapEvents",
+              "kind": "const"
+            },
+            {
+              "name": "Maybe",
+              "kind": "type"
+            },
+            {
+              "name": "InputMaybe",
+              "kind": "type"
+            },
+            {
+              "name": "Exact",
+              "kind": "type"
+            },
+            {
+              "name": "MakeOptional",
+              "kind": "type"
+            },
+            {
+              "name": "MakeMaybe",
+              "kind": "type"
+            },
+            {
+              "name": "MakeEmpty",
+              "kind": "type"
+            },
+            {
+              "name": "Incremental",
+              "kind": "type"
+            },
+            {
+              "name": "Scalars",
+              "kind": "type"
+            },
+            {
+              "name": "Block",
+              "kind": "type"
+            },
+            {
+              "name": "BlockOffset",
+              "kind": "type"
+            },
+            {
+              "name": "CollapsedMerkleTree",
+              "kind": "type"
+            },
+            {
+              "name": "CommitteeMember",
+              "kind": "type"
+            },
+            {
+              "name": "ContractAction",
+              "kind": "type"
+            },
+            {
+              "name": "ContractActionOffset",
+              "kind": "type"
+            },
+            {
+              "name": "ContractBalance",
+              "kind": "type"
+            },
+            {
+              "name": "ContractCall",
+              "kind": "type"
+            },
+            {
+              "name": "ContractDeploy",
+              "kind": "type"
+            },
+            {
+              "name": "ContractUpdate",
+              "kind": "type"
+            },
+            {
+              "name": "DParameter",
+              "kind": "type"
+            },
+            {
+              "name": "DParameterChange",
+              "kind": "type"
+            },
+            {
+              "name": "DustGenerationDtimeUpdate",
+              "kind": "type"
+            },
+            {
+              "name": "DustGenerationStatus",
+              "kind": "type"
+            },
+            {
+              "name": "DustInitialUtxo",
+              "kind": "type"
+            },
+            {
+              "name": "DustLedgerEvent",
+              "kind": "type"
+            },
+            {
+              "name": "DustOutput",
+              "kind": "type"
+            },
+            {
+              "name": "DustSpendProcessed",
+              "kind": "type"
+            },
+            {
+              "name": "EpochInfo",
+              "kind": "type"
+            },
+            {
+              "name": "EpochPerf",
+              "kind": "type"
+            },
+            {
+              "name": "FirstValidEpoch",
+              "kind": "type"
+            },
+            {
+              "name": "Mutation",
+              "kind": "type"
+            },
+            {
+              "name": "MutationConnectArgs",
+              "kind": "type"
+            },
+            {
+              "name": "MutationDisconnectArgs",
+              "kind": "type"
+            },
+            {
+              "name": "ParamChange",
+              "kind": "type"
+            },
+            {
+              "name": "PoolMetadata",
+              "kind": "type"
+            },
+            {
+              "name": "PresenceEvent",
+              "kind": "type"
+            },
+            {
+              "name": "Query",
+              "kind": "type"
+            },
+            {
+              "name": "QueryBlockArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryCommitteeArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryContractActionArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryDustGenerationStatusArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryEpochPerformanceArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryEpochUtilizationArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryPoolMetadataArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryPoolMetadataListArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryRegisteredFirstValidEpochsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryRegisteredPresenceArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryRegisteredSpoSeriesArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryRegisteredTotalsSeriesArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoByPoolIdArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoCompositeByPoolIdArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoIdentitiesArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoIdentityByPoolIdArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoListArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoPerformanceBySpoSkArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QuerySpoPerformanceLatestArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryStakeDistributionArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryStakePoolOperatorsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "QueryTransactionsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "RegisteredStat",
+              "kind": "type"
+            },
+            {
+              "name": "RegisteredTotals",
+              "kind": "type"
+            },
+            {
+              "name": "RegularTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "RelevantTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "Segment",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedTransactionsEvent",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedTransactionsProgress",
+              "kind": "type"
+            },
+            {
+              "name": "Spo",
+              "kind": "type"
+            },
+            {
+              "name": "SpoComposite",
+              "kind": "type"
+            },
+            {
+              "name": "SpoIdentity",
+              "kind": "type"
+            },
+            {
+              "name": "StakeShare",
+              "kind": "type"
+            },
+            {
+              "name": "Subscription",
+              "kind": "type"
+            },
+            {
+              "name": "SubscriptionBlocksArgs",
+              "kind": "type"
+            },
+            {
+              "name": "SubscriptionContractActionsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "SubscriptionDustLedgerEventsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "SubscriptionShieldedTransactionsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "SubscriptionUnshieldedTransactionsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "SubscriptionZswapLedgerEventsArgs",
+              "kind": "type"
+            },
+            {
+              "name": "SystemParameters",
+              "kind": "type"
+            },
+            {
+              "name": "SystemTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "TermsAndConditions",
+              "kind": "type"
+            },
+            {
+              "name": "TermsAndConditionsChange",
+              "kind": "type"
+            },
+            {
+              "name": "Transaction",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionFees",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionOffset",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionResult",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionResultStatus",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedTransactionsEvent",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedTransactionsProgress",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedUtxo",
+              "kind": "type"
+            },
+            {
+              "name": "ZswapLedgerEvent",
+              "kind": "type"
+            },
+            {
+              "name": "BlockHashQueryVariables",
+              "kind": "type"
+            },
+            {
+              "name": "BlockHashQuery",
+              "kind": "type"
+            },
+            {
+              "name": "ConnectMutationVariables",
+              "kind": "type"
+            },
+            {
+              "name": "ConnectMutation",
+              "kind": "type"
+            },
+            {
+              "name": "DisconnectMutationVariables",
+              "kind": "type"
+            },
+            {
+              "name": "DisconnectMutation",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionStatusQueryVariables",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionStatusQuery",
+              "kind": "type"
+            },
+            {
+              "name": "DustLedgerEventsSubscriptionVariables",
+              "kind": "type"
+            },
+            {
+              "name": "DustLedgerEventsSubscription",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedTransactionsSubscriptionVariables",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedTransactionsSubscription",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedTransactionsSubscriptionVariables",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedTransactionsSubscription",
+              "kind": "type"
+            },
+            {
+              "name": "ZswapEventsSubscriptionVariables",
+              "kind": "type"
+            },
+            {
+              "name": "ZswapEventsSubscription",
+              "kind": "type"
+            },
+            {
+              "name": "BlockHashDocument",
+              "kind": "const"
+            },
+            {
+              "name": "ConnectDocument",
+              "kind": "const"
+            },
+            {
+              "name": "DisconnectDocument",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionStatusDocument",
+              "kind": "const"
+            },
+            {
+              "name": "DustLedgerEventsDocument",
+              "kind": "const"
+            },
+            {
+              "name": "ShieldedTransactionsDocument",
+              "kind": "const"
+            },
+            {
+              "name": "UnshieldedTransactionsDocument",
+              "kind": "const"
+            },
+            {
+              "name": "ZswapEventsDocument",
+              "kind": "const"
+            }
+          ]
+        },
+        {
+          "path": "./effect",
+          "source_file": "packages/indexer-client/src/effect/index.ts",
+          "symbols": [
+            {
+              "name": "Query",
+              "kind": "namespace"
+            },
+            {
+              "name": "Subscription",
+              "kind": "namespace"
+            },
+            {
+              "name": "QueryClient",
+              "kind": "class"
+            },
+            {
+              "name": "HttpQueryClient",
+              "kind": "namespace"
+            },
+            {
+              "name": "SubscriptionClient",
+              "kind": "class"
+            },
+            {
+              "name": "WsSubscriptionClient",
+              "kind": "namespace"
+            },
+            {
+              "name": "ConnectionHelper",
+              "kind": "namespace"
+            },
+            {
+              "name": "QueryRunner",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "node-client",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-node-client",
+      "version": "1.0.1",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/node-client/src/index.ts",
+          "symbols": [
+            {
+              "name": "Config",
+              "kind": "type"
+            },
+            {
+              "name": "makeConfig",
+              "kind": "const"
+            },
+            {
+              "name": "DEFAULT_CONFIG",
+              "kind": "const"
+            },
+            {
+              "name": "PolkadotNodeClient",
+              "kind": "class"
+            }
+          ]
+        },
+        {
+          "path": "./effect",
+          "source_file": "packages/node-client/src/effect/index.ts",
+          "symbols": [
+            {
+              "name": "NodeClient",
+              "kind": "namespace"
+            },
+            {
+              "name": "Config",
+              "kind": "type"
+            },
+            {
+              "name": "DEFAULT_CONFIG",
+              "kind": "const"
+            },
+            {
+              "name": "makeConfig",
+              "kind": "const"
+            },
+            {
+              "name": "PolkadotNodeClient",
+              "kind": "class"
+            },
+            {
+              "name": "SubmissionEvent",
+              "kind": "namespace"
+            },
+            {
+              "name": "NodeClientError",
+              "kind": "namespace"
+            }
+          ]
+        },
+        {
+          "path": "./testing",
+          "source_file": "packages/node-client/src/testing/index.ts",
+          "symbols": [
+            {
+              "name": "TestTransactions",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "prover-client",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-prover-client",
+      "version": "1.1.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/prover-client/src/index.ts",
+          "symbols": [
+            {
+              "name": "HttpProverClient",
+              "kind": "class"
+            }
+          ]
+        },
+        {
+          "path": "./effect",
+          "source_file": "packages/prover-client/src/effect/index.ts",
+          "symbols": [
+            {
+              "name": "ProverClient",
+              "kind": "namespace"
+            },
+            {
+              "name": "HttpProverClient",
+              "kind": "namespace"
+            },
+            {
+              "name": "WasmProver",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "runtime",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-runtime",
+      "version": "1.0.1",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/runtime/src/index.ts",
+          "symbols": [
+            {
+              "name": "WalletBuilder",
+              "kind": "class"
+            },
+            {
+              "name": "BuildArguments",
+              "kind": "type"
+            },
+            {
+              "name": "FullConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "Runtime",
+              "kind": "namespace"
+            }
+          ]
+        },
+        {
+          "path": "./abstractions",
+          "source_file": "packages/runtime/src/abstractions/index.ts",
+          "symbols": [
+            {
+              "name": "Variant",
+              "kind": "namespace"
+            },
+            {
+              "name": "VariantBuilder",
+              "kind": "namespace"
+            },
+            {
+              "name": "WalletLike",
+              "kind": "namespace"
+            },
+            {
+              "name": "WalletRuntimeError",
+              "kind": "class"
+            },
+            {
+              "name": "StateChange",
+              "kind": "namespace"
+            },
+            {
+              "name": "VersionChangeType",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "shielded-wallet",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-shielded",
+      "version": "2.0.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/shielded-wallet/src/index.ts",
+          "symbols": [
+            {
+              "name": "ShieldedWalletCapabilities",
+              "kind": "type"
+            },
+            {
+              "name": "UnboundTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedWalletState",
+              "kind": "class"
+            },
+            {
+              "name": "ShieldedWallet",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedWalletClass",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedWalletAPI",
+              "kind": "type"
+            },
+            {
+              "name": "CustomizedShieldedWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultShieldedConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "CustomizedShieldedWalletClass",
+              "kind": "interface"
+            },
+            {
+              "name": "CustomShieldedWallet",
+              "kind": "function"
+            }
+          ]
+        },
+        {
+          "path": "./v1",
+          "source_file": "packages/shielded-wallet/src/v1/index.ts",
+          "symbols": [
+            {
+              "name": "BaseV1Configuration",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Configuration",
+              "kind": "type"
+            },
+            {
+              "name": "V1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "AnyV1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionOf",
+              "kind": "type"
+            },
+            {
+              "name": "AuxDataOf",
+              "kind": "type"
+            },
+            {
+              "name": "SerializedStateOf",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Builder",
+              "kind": "type"
+            },
+            {
+              "name": "V1Builder",
+              "kind": "class"
+            },
+            {
+              "name": "Sync",
+              "kind": "namespace"
+            },
+            {
+              "name": "Transacting",
+              "kind": "namespace"
+            },
+            {
+              "name": "TransactionHistory",
+              "kind": "namespace"
+            },
+            {
+              "name": "Serialization",
+              "kind": "namespace"
+            },
+            {
+              "name": "CoinsAndBalances",
+              "kind": "namespace"
+            },
+            {
+              "name": "Keys",
+              "kind": "namespace"
+            },
+            {
+              "name": "Context",
+              "kind": "type"
+            },
+            {
+              "name": "AnyContext",
+              "kind": "type"
+            },
+            {
+              "name": "V1Tag",
+              "kind": "const"
+            },
+            {
+              "name": "DefaultRunningV1",
+              "kind": "type"
+            },
+            {
+              "name": "RunningV1Variant",
+              "kind": "class"
+            },
+            {
+              "name": "Simulator",
+              "kind": "namespace"
+            },
+            {
+              "name": "WalletError",
+              "kind": "namespace"
+            },
+            {
+              "name": "PublicKeys",
+              "kind": "type"
+            },
+            {
+              "name": "CoinHashesMap",
+              "kind": "type"
+            },
+            {
+              "name": "CoreWallet",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionOps",
+              "kind": "type"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "unshielded-wallet",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-unshielded-wallet",
+      "version": "2.0.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/unshielded-wallet/src/index.ts",
+          "symbols": [
+            {
+              "name": "UnshieldedWalletCapabilities",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedWalletState",
+              "kind": "class"
+            },
+            {
+              "name": "UnshieldedWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultUnshieldedConfiguration",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedWalletClass",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedWalletAPI",
+              "kind": "type"
+            },
+            {
+              "name": "CustomizedUnshieldedWallet",
+              "kind": "type"
+            },
+            {
+              "name": "CustomizedUnshieldedWalletClass",
+              "kind": "interface"
+            },
+            {
+              "name": "CustomUnshieldedWallet",
+              "kind": "function"
+            },
+            {
+              "name": "TransactionHistory",
+              "kind": "type"
+            },
+            {
+              "name": "InMemoryTransactionHistoryStorage",
+              "kind": "class"
+            },
+            {
+              "name": "NoOpTransactionHistoryStorage",
+              "kind": "class"
+            },
+            {
+              "name": "TransactionHash",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionHistoryEntrySchema",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionHistoryEntry",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionHistoryStorage",
+              "kind": "interface"
+            },
+            {
+              "name": "PublicKey",
+              "kind": "type"
+            },
+            {
+              "name": "UnshieldedKeystore",
+              "kind": "interface"
+            },
+            {
+              "name": "createKeystore",
+              "kind": "const"
+            }
+          ]
+        },
+        {
+          "path": "./v1",
+          "source_file": "packages/unshielded-wallet/src/v1/index.ts",
+          "symbols": [
+            {
+              "name": "BaseV1Configuration",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Configuration",
+              "kind": "type"
+            },
+            {
+              "name": "V1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "AnyV1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Variant",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionOf",
+              "kind": "type"
+            },
+            {
+              "name": "SerializedStateOf",
+              "kind": "type"
+            },
+            {
+              "name": "DefaultV1Builder",
+              "kind": "type"
+            },
+            {
+              "name": "V1Builder",
+              "kind": "class"
+            },
+            {
+              "name": "Sync",
+              "kind": "namespace"
+            },
+            {
+              "name": "SyncProgress",
+              "kind": "namespace"
+            },
+            {
+              "name": "Transacting",
+              "kind": "namespace"
+            },
+            {
+              "name": "TransactionHistory",
+              "kind": "namespace"
+            },
+            {
+              "name": "Serialization",
+              "kind": "namespace"
+            },
+            {
+              "name": "CoinsAndBalances",
+              "kind": "namespace"
+            },
+            {
+              "name": "Keys",
+              "kind": "namespace"
+            },
+            {
+              "name": "Context",
+              "kind": "type"
+            },
+            {
+              "name": "AnyContext",
+              "kind": "type"
+            },
+            {
+              "name": "V1Tag",
+              "kind": "const"
+            },
+            {
+              "name": "DefaultRunningV1",
+              "kind": "type"
+            },
+            {
+              "name": "RunningV1Variant",
+              "kind": "class"
+            },
+            {
+              "name": "Simulator",
+              "kind": "namespace"
+            },
+            {
+              "name": "WalletError",
+              "kind": "namespace"
+            },
+            {
+              "name": "CoreWallet",
+              "kind": "type"
+            },
+            {
+              "name": "UnboundTransaction",
+              "kind": "type"
+            },
+            {
+              "name": "IntentOf",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionOps",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionHistoryStorage",
+              "kind": "namespace"
+            },
+            {
+              "name": "UnshieldedState",
+              "kind": "namespace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "utilities",
+      "npm_name": "@midnight-ntwrk/wallet-sdk-utilities",
+      "version": "1.0.1",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/utilities/src/index.ts",
+          "symbols": [
+            {
+              "name": "ArrayOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "BlobOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "DateOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "EitherOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "Fluent",
+              "kind": "namespace"
+            },
+            {
+              "name": "HList",
+              "kind": "namespace"
+            },
+            {
+              "name": "LedgerOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "ObservableOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "Poly",
+              "kind": "namespace"
+            },
+            {
+              "name": "RecordOps",
+              "kind": "namespace"
+            },
+            {
+              "name": "SafeBigInt",
+              "kind": "namespace"
+            }
+          ]
+        },
+        {
+          "path": "./networking",
+          "source_file": "packages/utilities/src/networking/index.ts",
+          "symbols": [
+            {
+              "name": "HttpURL",
+              "kind": "namespace"
+            },
+            {
+              "name": "WsURL",
+              "kind": "namespace"
+            },
+            {
+              "name": "InvalidProtocolSchemeError",
+              "kind": "class"
+            },
+            {
+              "name": "FailedToDeriveWebSocketUrlError",
+              "kind": "class"
+            },
+            {
+              "name": "URLError",
+              "kind": "type"
+            },
+            {
+              "name": "ClientError",
+              "kind": "class"
+            },
+            {
+              "name": "ServerError",
+              "kind": "class"
+            }
+          ]
+        },
+        {
+          "path": "./types",
+          "source_file": "packages/utilities/src/types.ts",
+          "symbols": [
+            {
+              "name": "CanAssign",
+              "kind": "type"
+            },
+            {
+              "name": "Expect",
+              "kind": "type"
+            },
+            {
+              "name": "ItemType",
+              "kind": "type"
+            },
+            {
+              "name": "Equal",
+              "kind": "type"
+            }
+          ]
+        },
+        {
+          "path": "./testing",
+          "source_file": "packages/utilities/src/testing/index.ts",
+          "symbols": [
+            {
+              "name": "TestContainers",
+              "kind": "namespace"
+            },
+            {
+              "name": "getRepositoryRoot",
+              "kind": "function"
+            },
+            {
+              "name": "getComposeDirectory",
+              "kind": "function"
+            },
+            {
+              "name": "BuildTestEnvironmentVariablesOptions",
+              "kind": "interface"
+            },
+            {
+              "name": "buildTestEnvironmentVariables",
+              "kind": "function"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

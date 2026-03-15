@@ -1,0 +1,12 @@
+schema: 1
+primary:
+  repo: midnight-wallet
+  commit: 07ea7675
+  ref: HEAD
+snapshot:
+  doc_commit: null
+  status: draft
+  created_by: ai-doc-orchestrator
+dependencies: []
+artifacts:
+  markdown: docs/wallet-sdk-reference.md

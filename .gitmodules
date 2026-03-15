@@ -1,0 +1,3 @@
+[submodule "upstream/midnight-wallet"]
+	path = upstream/midnight-wallet
+	url = https://github.com/midnightntwrk/midnight-wallet.git
