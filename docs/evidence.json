@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-15T01:59:10.085Z",
-  "total": 103,
-  "passing": 103,
+  "generated_at": "2026-03-15T02:32:40.441Z",
+  "total": 117,
+  "passing": 117,
   "failing": 0,
   "errors": 0,
   "results": [
@@ -668,6 +668,104 @@
       "status": "pass",
       "tier": "tier1",
       "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "facade/derive-role-keys",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/create-secret-keys",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/build-configuration",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/init-wallet-facade",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/start-wallet",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/wait-for-sync",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-shielded-balances",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-unshielded-balances",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-dust-balance",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-dust-address",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-shielded-address",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-unshielded-address",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/read-sync-progress",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "facade/stop-wallet",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
       "detail": null
     },
     {
