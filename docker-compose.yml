@@ -14,8 +14,8 @@ services:
     environment:
       - UPSTREAM_DIR=/app/upstream/midnight-wallet
       - MIDNIGHT_NODE_URL=ws://node:9944
-      - MIDNIGHT_INDEXER_URL=http://indexer:8088/api/v4/graphql
-      - MIDNIGHT_INDEXER_WS_URL=ws://indexer:8088/api/v4/v1/graphql/ws
+      - MIDNIGHT_INDEXER_URL=http://indexer:8088/api/v1/graphql
+      - MIDNIGHT_INDEXER_WS_URL=ws://indexer:8088/api/v1/graphql/ws
       - MIDNIGHT_PROOF_SERVER_URL=http://proof-server:6300
     working_dir: /app/workspace
     depends_on:
@@ -46,7 +46,7 @@ services:
       - standalone
 
   node:
-    image: midnightntwrk/midnight-node:0.22.0-rc.6
+    image: midnightntwrk/midnight-node:0.21.0
     volumes:
       - node-data:/data
     environment:
@@ -60,19 +60,18 @@ services:
       start_period: 5s
 
   indexer:
-    image: midnightntwrk/indexer-standalone:4.0.0-rc.5
-    environment:
-      APP__INFRA__NODE__URL: ws://node:9944
-      APP__INFRA__SECRET: 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+    image: midnightntwrk/indexer-standalone:3.1.0
+    volumes:
+      - ./docker/indexer-config.yaml:/opt/indexer-standalone/config.yaml:ro
     depends_on:
       node:
         condition: service_healthy
     healthcheck:
-      test: ["CMD-SHELL", "cat /var/run/indexer-standalone/running"]
-      interval: 10s
-      timeout: 5s
-      retries: 30
-      start_period: 60s
+      test: ["CMD-SHELL", "test -f /proc/1/status"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 30s
 
   proof-server:
     image: midnightntwrk/proof-server:8.0.2

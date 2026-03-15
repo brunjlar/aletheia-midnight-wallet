@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-15T02:32:40.441Z",
-  "total": 117,
-  "passing": 117,
+  "generated_at": "2026-03-15T08:23:32.291Z",
+  "total": 96,
+  "passing": 95,
   "failing": 0,
-  "errors": 0,
+  "errors": 1,
   "results": [
     {
       "name": "abstractions/WalletSeed-from-bytes",
@@ -671,158 +671,11 @@
       "detail": null
     },
     {
-      "name": "facade/derive-role-keys",
-      "status": "pass",
+      "name": "devnet/error",
+      "status": "error",
       "tier": "tier3",
       "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/create-secret-keys",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/build-configuration",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/init-wallet-facade",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/start-wallet",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/wait-for-sync",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-shielded-balances",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-unshielded-balances",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-dust-balance",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-dust-address",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-shielded-address",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-unshielded-address",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/read-sync-progress",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "facade/stop-wallet",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/create-hd-wallet",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/derive-all-role-keys",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/create-unshielded-keystore",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/bech32m-encode-unshielded-address",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/connect-node-client",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/indexer-graphql-reachable",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/construct-prover-client",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
-    },
-    {
-      "name": "tier3/close-node-client",
-      "status": "pass",
-      "tier": "tier3",
-      "category": "devnet",
-      "detail": null
+      "detail": "spawnSync /bin/sh ETIMEDOUT"
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
 <!-- Source: upstream/midnight-wallet @ 07ea7675 -->
-<!-- Generated: 2026-03-15T02:32:40.505Z -->
+<!-- Generated: 2026-03-15T08:23:32.334Z -->
 
 ## 1. Introduction
 
@@ -82,8 +82,8 @@ for pattern matching.
 | Tier | Passing | Failing | Errors | Total |
 |------|---------|---------|--------|-------|
 | tier1 | 95 | 0 | 0 | 95 |
-| tier3 | 22 | 0 | 0 | 22 |
-| **Total** | **117** | **0** | | **117** |
+| tier3 | 0 | 0 | 1 | 1 |
+| **Total** | **95** | **1** | | **96** |
 
 ---
 
@@ -1131,22 +1131,7 @@ The facade exposes its sub-wallets as public readonly fields: `shielded`,
 `unshielded`, `dust`, `submissionService`, `pendingTransactionsService`,
 `provingService`.
 
-| Test | Status | Detail |
-|------|--------|--------|
-| facade/derive-role-keys | PASS | — |
-| facade/create-secret-keys | PASS | — |
-| facade/build-configuration | PASS | — |
-| facade/init-wallet-facade | PASS | — |
-| facade/start-wallet | PASS | — |
-| facade/wait-for-sync | PASS | — |
-| facade/read-shielded-balances | PASS | — |
-| facade/read-unshielded-balances | PASS | — |
-| facade/read-dust-balance | PASS | — |
-| facade/read-dust-address | PASS | — |
-| facade/read-shielded-address | PASS | — |
-| facade/read-unshielded-address | PASS | — |
-| facade/read-sync-progress | PASS | — |
-| facade/stop-wallet | PASS | — |
+*No evidence collected yet.*
 
 ---
 
@@ -1323,28 +1308,7 @@ and package.
 
 | Test | Tier | Status |
 |------|------|--------|
-| facade/derive-role-keys | tier3 | pass |
-| facade/create-secret-keys | tier3 | pass |
-| facade/build-configuration | tier3 | pass |
-| facade/init-wallet-facade | tier3 | pass |
-| facade/start-wallet | tier3 | pass |
-| facade/wait-for-sync | tier3 | pass |
-| facade/read-shielded-balances | tier3 | pass |
-| facade/read-unshielded-balances | tier3 | pass |
-| facade/read-dust-balance | tier3 | pass |
-| facade/read-dust-address | tier3 | pass |
-| facade/read-shielded-address | tier3 | pass |
-| facade/read-unshielded-address | tier3 | pass |
-| facade/read-sync-progress | tier3 | pass |
-| facade/stop-wallet | tier3 | pass |
-| tier3/create-hd-wallet | tier3 | pass |
-| tier3/derive-all-role-keys | tier3 | pass |
-| tier3/create-unshielded-keystore | tier3 | pass |
-| tier3/bech32m-encode-unshielded-address | tier3 | pass |
-| tier3/connect-node-client | tier3 | pass |
-| tier3/indexer-graphql-reachable | tier3 | pass |
-| tier3/construct-prover-client | tier3 | pass |
-| tier3/close-node-client | tier3 | pass |
+| devnet/error | tier3 | error |
 
 ### standalone
 

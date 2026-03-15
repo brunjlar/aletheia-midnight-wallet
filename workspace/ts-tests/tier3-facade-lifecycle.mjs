@@ -25,7 +25,7 @@ import { makeDefaultProvingService } from '@midnight-ntwrk/wallet-sdk-capabiliti
 import * as rx from 'rxjs';
 
 const NODE_URL = process.env.MIDNIGHT_NODE_URL || 'ws://localhost:9944';
-const INDEXER_URL = process.env.MIDNIGHT_INDEXER_URL || 'http://localhost:8088/api/v4/graphql';
+const INDEXER_URL = process.env.MIDNIGHT_INDEXER_URL || 'http://localhost:8088/api/v1/graphql';
 const INDEXER_WS_URL = process.env.MIDNIGHT_INDEXER_WS_URL || 'ws://localhost:8088/api/v4/graphql/ws';
 const PROOF_SERVER_URL = process.env.MIDNIGHT_PROOF_SERVER_URL || 'http://localhost:6300';
 const NETWORK_ID = NetworkId.NetworkId.Undeployed;
@@ -122,32 +122,16 @@ await test('facade/start-wallet', async () => {
 });
 
 await test('facade/wait-for-sync', async () => {
-  // Wait for sync with a timeout.
-  // NOTE: Sync may fail if the wallet SDK's GraphQL subscriptions
-  // target a different schema version than the indexer provides.
-  // This is a genuine compatibility finding — wallet-sdk 2.0.0 was
-  // built for an older indexer API. We test with a short timeout
-  // and accept timeout as a known limitation.
-  try {
-    const syncedState = await Promise.race([
-      facade.waitForSyncedState(),
-      new Promise((_, reject) =>
-        setTimeout(() => reject(new Error('SYNC_TIMEOUT')), 15000)
-      ),
-    ]);
-    assert(syncedState !== null, 'Synced state received');
-    assert(syncedState.isSynced, 'State reports synced');
-  } catch (e) {
-    if (e.message === 'SYNC_TIMEOUT') {
-      // Expected with indexer 4.0.0-rc.5 — the GraphQL subscription
-      // schema changed. Wallet init + start succeeded, but WebSocket
-      // sync cannot complete. This is a version compatibility issue,
-      // not a test failure.
-      console.log('NOTE: Sync timed out (expected with indexer 4.x + wallet-sdk 2.0)');
-    } else {
-      throw e;
-    }
-  }
+  // Wait for sync with a timeout — devnet should sync quickly
+  const syncedState = await Promise.race([
+    facade.waitForSyncedState(),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('Sync timed out after 120s')), 120000)
+    ),
+  ]);
+
+  assert(syncedState !== null, 'Synced state received');
+  assert(syncedState.isSynced, 'State reports synced');
 });
 
 // --- Step 6: Read balances ---

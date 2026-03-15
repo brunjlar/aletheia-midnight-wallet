@@ -25,7 +25,7 @@ import { QueryRunner } from '@midnight-ntwrk/wallet-sdk-indexer-client/effect';
 
 const NODE_URL = process.env.MIDNIGHT_NODE_URL || 'ws://localhost:9944';
 const PROOF_SERVER_URL = process.env.MIDNIGHT_PROOF_SERVER_URL || 'http://localhost:6300';
-const INDEXER_URL = process.env.MIDNIGHT_INDEXER_URL || 'http://localhost:8088/api/v4/graphql';
+const INDEXER_URL = process.env.MIDNIGHT_INDEXER_URL || 'http://localhost:8088/api/v1/graphql';
 
 const results = [];
 
