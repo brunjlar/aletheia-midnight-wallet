@@ -5,13 +5,17 @@
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join } from 'path';
+import { createRequire } from 'module';
+
+// Resolve packages from workspace/node_modules even when script runs from /app/tools
+const require = createRequire(join(process.cwd(), 'node_modules', '.package-lock.json'));
 
 const DOCS_DIR = process.env.DOCS_DIR || '/app/docs';
 const ARTIFACTS_DIR = join(DOCS_DIR, '..', 'artifacts', 'pdf');
 
 async function main() {
-  const { marked } = await import('marked');
-  const puppeteer = await import('puppeteer');
+  const { marked } = require('marked');
+  const puppeteer = require('puppeteer');
 
   const mdPath = join(DOCS_DIR, 'wallet-sdk-reference.md');
   const markdown = readFileSync(mdPath, 'utf-8');

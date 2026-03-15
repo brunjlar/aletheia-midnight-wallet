@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-15T00:38:28.852Z",
-  "total": 50,
-  "passing": 50,
+  "generated_at": "2026-03-15T01:59:10.085Z",
+  "total": 103,
+  "passing": 103,
   "failing": 0,
   "errors": 0,
   "results": [
@@ -209,6 +209,104 @@
       "detail": null
     },
     {
+      "name": "capabilities/Imbalances-empty",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/Imbalances-fromEntry",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/Imbalances-merge",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/Imbalances-fromEntries",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/Imbalances-typeSet",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/InsufficientFundsError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/chooseCoin-selects-smallest",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/chooseCoin-returns-undefined-for-wrong-type",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/getBalanceRecipe-basic",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/SubmissionError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/SubmissionError-with-cause",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/ProvingError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/ProvingError-tag",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "capabilities/PendingTransactions-namespace-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
       "name": "hd/mnemonic-generates-24-words",
       "status": "pass",
       "tier": "tier1",
@@ -286,6 +384,223 @@
       "detail": null
     },
     {
+      "name": "indexer-client/Connect-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/Disconnect-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/BlockHash-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/TransactionStatus-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/QueryClient-is-context-tag",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/SubscriptionClient-is-context-tag",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/ConnectionHelper-deriveWebSocketUrl",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/QueryRunner-runPromise",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/SafeBigInt-namespace-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/DateOps-namespace-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/ArrayOps-namespace-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/BlobOps-namespace-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/InvalidProtocolSchemeError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/FailedToDeriveWebSocketUrlError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/ClientError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "utilities/ServerError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/DustWallet-is-factory-function",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/ShieldedWallet-is-factory-function",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/UnshieldedWallet-is-factory-function",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/DustWalletState-has-mapState",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/ShieldedWalletState-has-mapState",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/UnshieldedWalletState-has-mapState",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/createKeystore-from-random-key",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/PublicKey-fromKeyStore",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/WalletBuilder-init",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/Runtime-namespace-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/WalletRuntimeError-construction",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/FacadeState-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/BalancingRecipe-isRecipe",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/BalancingRecipe-getTransactions",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "wallets/WalletFacade-init-is-static",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
       "name": "typecheck/abstractions",
       "status": "pass",
       "tier": "tier1",
@@ -353,6 +668,62 @@
       "status": "pass",
       "tier": "tier1",
       "category": "typecheck",
+      "detail": null
+    },
+    {
+      "name": "tier3/create-hd-wallet",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/derive-all-role-keys",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/create-unshielded-keystore",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/bech32m-encode-unshielded-address",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/connect-node-client",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/indexer-graphql-reachable",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/construct-prover-client",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
+      "detail": null
+    },
+    {
+      "name": "tier3/close-node-client",
+      "status": "pass",
+      "tier": "tier3",
+      "category": "devnet",
       "detail": null
     }
   ]
