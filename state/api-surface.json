@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-03-19T23:32:30.001Z",
+  "extracted_at": "2026-03-21T21:33:00.470Z",
   "packages": [
     {
       "name": "abstractions",
@@ -45,7 +45,7 @@
     {
       "name": "address-format",
       "npm_name": "@midnight-ntwrk/wallet-sdk-address-format",
-      "version": "3.1.0-rc.0",
+      "version": "3.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -126,7 +126,7 @@
     {
       "name": "capabilities",
       "npm_name": "@midnight-ntwrk/wallet-sdk-capabilities",
-      "version": "3.2.0-rc.0",
+      "version": "3.2.0",
       "entry_points": [
         {
           "path": ".",
@@ -587,7 +587,7 @@
     {
       "name": "dust-wallet",
       "npm_name": "@midnight-ntwrk/wallet-sdk-dust-wallet",
-      "version": "3.0.0-rc.0",
+      "version": "3.0.0",
       "entry_points": [
         {
           "path": ".",
@@ -766,7 +766,7 @@
     {
       "name": "facade",
       "npm_name": "@midnight-ntwrk/wallet-sdk-facade",
-      "version": "3.0.0-rc.0",
+      "version": "3.0.0",
       "entry_points": [
         {
           "path": ".",
@@ -925,7 +925,7 @@
     {
       "name": "indexer-client",
       "npm_name": "@midnight-ntwrk/wallet-sdk-indexer-client",
-      "version": "1.2.0-rc.0",
+      "version": "1.2.0",
       "entry_points": [
         {
           "path": ".",
@@ -1480,7 +1480,7 @@
     {
       "name": "node-client",
       "npm_name": "@midnight-ntwrk/wallet-sdk-node-client",
-      "version": "1.1.0-rc.0",
+      "version": "1.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -1553,7 +1553,7 @@
     {
       "name": "prover-client",
       "npm_name": "@midnight-ntwrk/wallet-sdk-prover-client",
-      "version": "1.2.0-rc.0",
+      "version": "1.2.0",
       "entry_points": [
         {
           "path": ".",
@@ -1588,7 +1588,7 @@
     {
       "name": "runtime",
       "npm_name": "@midnight-ntwrk/wallet-sdk-runtime",
-      "version": "1.0.2-rc.0",
+      "version": "1.0.2",
       "entry_points": [
         {
           "path": ".",
@@ -1647,7 +1647,7 @@
     {
       "name": "shielded-wallet",
       "npm_name": "@midnight-ntwrk/wallet-sdk-shielded",
-      "version": "2.1.0-rc.0",
+      "version": "2.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -1814,7 +1814,7 @@
     {
       "name": "unshielded-wallet",
       "npm_name": "@midnight-ntwrk/wallet-sdk-unshielded-wallet",
-      "version": "2.1.0-rc.0",
+      "version": "2.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -2025,7 +2025,7 @@
     {
       "name": "utilities",
       "npm_name": "@midnight-ntwrk/wallet-sdk-utilities",
-      "version": "1.1.0-rc.0",
+      "version": "1.1.0",
       "entry_points": [
         {
           "path": ".",

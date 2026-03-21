@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 07ea7675 -->
-<!-- Generated: 2026-03-15T08:23:32.334Z -->
+<!-- Source: upstream/midnight-wallet @ a1da64624b6a49aeed66d4f6466dee51fbab98ef -->
+<!-- Generated: 2026-03-21T21:35:12.098Z -->
 
 ## 1. Introduction
 
@@ -101,7 +101,7 @@ for pattern matching.
 | `NetworkId` | namespace | — |
 | `SyncProgress` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-address-format (3.0.1)
+### @midnight-ntwrk/wallet-sdk-address-format (3.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -123,7 +123,7 @@ for pattern matching.
 | `UnshieldedAddress` | class | — |
 | `DustAddress` | class | — |
 
-### @midnight-ntwrk/wallet-sdk-capabilities (3.1.0)
+### @midnight-ntwrk/wallet-sdk-capabilities (3.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -254,7 +254,7 @@ for pattern matching.
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
 
-### @midnight-ntwrk/wallet-sdk-dust-wallet (2.0.0)
+### @midnight-ntwrk/wallet-sdk-dust-wallet (3.0.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -304,7 +304,7 @@ for pattern matching.
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-facade (2.0.0)
+### @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -321,6 +321,8 @@ for pattern matching.
 | `TransactionIdentifier` | type | — |
 | `UtxoWithMeta` | type | — |
 | `FacadeState` | class | — |
+| `TermsAndConditions` | type | — |
+| `FetchTermsAndConditionsConfiguration` | type | — |
 | `DefaultConfiguration` | type | — |
 | `InitParams` | type | — |
 | `WalletFacade` | class | — |
@@ -341,13 +343,14 @@ for pattern matching.
 | `generateRandomSeed` | const | — |
 | `validateMnemonic` | const | — |
 
-### @midnight-ntwrk/wallet-sdk-indexer-client (1.1.0)
+### @midnight-ntwrk/wallet-sdk-indexer-client (1.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `Connect` | const | — |
 | `Disconnect` | const | — |
 | `BlockHash` | const | — |
+| `FetchTermsAndConditions` | const | — |
 | `TransactionStatus` | const | — |
 | `DustLedgerEvents` | const | — |
 | `ShieldedTransactions` | const | — |
@@ -449,6 +452,8 @@ for pattern matching.
 | `ConnectMutation` | type | — |
 | `DisconnectMutationVariables` | type | — |
 | `DisconnectMutation` | type | — |
+| `FetchTermsAndConditionsQueryVariables` | type | — |
+| `FetchTermsAndConditionsQuery` | type | — |
 | `TransactionStatusQueryVariables` | type | — |
 | `TransactionStatusQuery` | type | — |
 | `DustLedgerEventsSubscriptionVariables` | type | — |
@@ -462,6 +467,7 @@ for pattern matching.
 | `BlockHashDocument` | const | — |
 | `ConnectDocument` | const | — |
 | `DisconnectDocument` | const | — |
+| `FetchTermsAndConditionsDocument` | const | — |
 | `TransactionStatusDocument` | const | — |
 | `DustLedgerEventsDocument` | const | — |
 | `ShieldedTransactionsDocument` | const | — |
@@ -481,7 +487,7 @@ for pattern matching.
 | `ConnectionHelper` | namespace | — |
 | `QueryRunner` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-node-client (1.0.1)
+### @midnight-ntwrk/wallet-sdk-node-client (1.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -508,7 +514,7 @@ for pattern matching.
 |--------|------|---------|
 | `TestTransactions` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-prover-client (1.1.0)
+### @midnight-ntwrk/wallet-sdk-prover-client (1.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -522,7 +528,7 @@ for pattern matching.
 | `HttpProverClient` | namespace | — |
 | `WasmProver` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-runtime (1.0.1)
+### @midnight-ntwrk/wallet-sdk-runtime (1.0.2)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -542,7 +548,7 @@ for pattern matching.
 | `StateChange` | namespace | — |
 | `VersionChangeType` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-shielded (2.0.0)
+### @midnight-ntwrk/wallet-sdk-shielded (2.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -589,7 +595,7 @@ for pattern matching.
 | `CoreWallet` | type | — |
 | `TransactionOps` | type | — |
 
-### @midnight-ntwrk/wallet-sdk-unshielded-wallet (2.0.0)
+### @midnight-ntwrk/wallet-sdk-unshielded-wallet (2.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -647,7 +653,7 @@ for pattern matching.
 | `TransactionHistoryStorage` | namespace | — |
 | `UnshieldedState` | namespace | — |
 
-### @midnight-ntwrk/wallet-sdk-utilities (1.0.1)
+### @midnight-ntwrk/wallet-sdk-utilities (1.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -694,7 +700,7 @@ for pattern matching.
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
-**Total: 465 symbols, 3 members across 13 packages**
+**Total: 471 symbols, 3 members across 13 packages**
 
 ---
 
@@ -1171,6 +1177,7 @@ indexer's GraphQL schema. These are listed here for completeness.
 | `Connect` | const |
 | `Disconnect` | const |
 | `BlockHash` | const |
+| `FetchTermsAndConditions` | const |
 | `TransactionStatus` | const |
 | `DustLedgerEvents` | const |
 | `ShieldedTransactions` | const |
@@ -1272,6 +1279,8 @@ indexer's GraphQL schema. These are listed here for completeness.
 | `ConnectMutation` | type |
 | `DisconnectMutationVariables` | type |
 | `DisconnectMutation` | type |
+| `FetchTermsAndConditionsQueryVariables` | type |
+| `FetchTermsAndConditionsQuery` | type |
 | `TransactionStatusQueryVariables` | type |
 | `TransactionStatusQuery` | type |
 | `DustLedgerEventsSubscriptionVariables` | type |
@@ -1285,6 +1294,7 @@ indexer's GraphQL schema. These are listed here for completeness.
 | `BlockHashDocument` | const |
 | `ConnectDocument` | const |
 | `DisconnectDocument` | const |
+| `FetchTermsAndConditionsDocument` | const |
 | `TransactionStatusDocument` | const |
 | `DustLedgerEventsDocument` | const |
 | `ShieldedTransactionsDocument` | const |
@@ -1420,7 +1430,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 07ea7675 |
+| Wallet SDK upstream | a1da64624b6a49aeed66d4f6466dee51fbab98ef |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

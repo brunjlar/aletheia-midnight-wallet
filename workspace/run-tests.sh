@@ -64,6 +64,9 @@ if [ "$DEVNET" = true ]; then
   echo ""
 fi
 
+# Steps 6-8 run from /app (tools use relative paths to state/ and docs/)
+cd /app
+
 # Step 6: Check coverage
 echo "--- Step 6: Check coverage ---"
 node /app/tools/check-coverage.mjs

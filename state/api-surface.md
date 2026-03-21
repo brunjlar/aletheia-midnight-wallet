@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-03-19T23:32:30.042Z*
+*Extracted: 2026-03-21T21:33:00.511Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -14,7 +14,7 @@
 | `NetworkId` | namespace | — |
 | `SyncProgress` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-address-format (3.1.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-address-format (3.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -36,7 +36,7 @@
 | `UnshieldedAddress` | class | — |
 | `DustAddress` | class | — |
 
-## @midnight-ntwrk/wallet-sdk-capabilities (3.2.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-capabilities (3.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -167,7 +167,7 @@
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
 
-## @midnight-ntwrk/wallet-sdk-dust-wallet (3.0.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-dust-wallet (3.0.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -217,7 +217,7 @@
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-facade (3.0.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -256,7 +256,7 @@
 | `generateRandomSeed` | const | — |
 | `validateMnemonic` | const | — |
 
-## @midnight-ntwrk/wallet-sdk-indexer-client (1.2.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-indexer-client (1.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -400,7 +400,7 @@
 | `ConnectionHelper` | namespace | — |
 | `QueryRunner` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-node-client (1.1.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-node-client (1.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -427,7 +427,7 @@
 |--------|------|---------|
 | `TestTransactions` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-prover-client (1.2.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-prover-client (1.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -441,7 +441,7 @@
 | `HttpProverClient` | namespace | — |
 | `WasmProver` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-runtime (1.0.2-rc.0)
+## @midnight-ntwrk/wallet-sdk-runtime (1.0.2)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -461,7 +461,7 @@
 | `StateChange` | namespace | — |
 | `VersionChangeType` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-shielded (2.1.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-shielded (2.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -508,7 +508,7 @@
 | `CoreWallet` | type | — |
 | `TransactionOps` | type | — |
 
-## @midnight-ntwrk/wallet-sdk-unshielded-wallet (2.1.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-unshielded-wallet (2.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -566,7 +566,7 @@
 | `TransactionHistoryStorage` | namespace | — |
 | `UnshieldedState` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-utilities (1.1.0-rc.0)
+## @midnight-ntwrk/wallet-sdk-utilities (1.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
