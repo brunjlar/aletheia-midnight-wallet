@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-03-15T00:17:06.397Z*
+*Extracted: 2026-03-21T21:33:00.511Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -14,7 +14,7 @@
 | `NetworkId` | namespace | — |
 | `SyncProgress` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-address-format (3.0.1)
+## @midnight-ntwrk/wallet-sdk-address-format (3.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -36,7 +36,7 @@
 | `UnshieldedAddress` | class | — |
 | `DustAddress` | class | — |
 
-## @midnight-ntwrk/wallet-sdk-capabilities (3.1.0)
+## @midnight-ntwrk/wallet-sdk-capabilities (3.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -167,7 +167,7 @@
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
 
-## @midnight-ntwrk/wallet-sdk-dust-wallet (2.0.0)
+## @midnight-ntwrk/wallet-sdk-dust-wallet (3.0.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -217,7 +217,7 @@
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-facade (2.0.0)
+## @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -234,6 +234,8 @@
 | `TransactionIdentifier` | type | — |
 | `UtxoWithMeta` | type | — |
 | `FacadeState` | class | — |
+| `TermsAndConditions` | type | — |
+| `FetchTermsAndConditionsConfiguration` | type | — |
 | `DefaultConfiguration` | type | — |
 | `InitParams` | type | — |
 | `WalletFacade` | class | — |
@@ -254,13 +256,14 @@
 | `generateRandomSeed` | const | — |
 | `validateMnemonic` | const | — |
 
-## @midnight-ntwrk/wallet-sdk-indexer-client (1.1.0)
+## @midnight-ntwrk/wallet-sdk-indexer-client (1.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `Connect` | const | — |
 | `Disconnect` | const | — |
 | `BlockHash` | const | — |
+| `FetchTermsAndConditions` | const | — |
 | `TransactionStatus` | const | — |
 | `DustLedgerEvents` | const | — |
 | `ShieldedTransactions` | const | — |
@@ -362,6 +365,8 @@
 | `ConnectMutation` | type | — |
 | `DisconnectMutationVariables` | type | — |
 | `DisconnectMutation` | type | — |
+| `FetchTermsAndConditionsQueryVariables` | type | — |
+| `FetchTermsAndConditionsQuery` | type | — |
 | `TransactionStatusQueryVariables` | type | — |
 | `TransactionStatusQuery` | type | — |
 | `DustLedgerEventsSubscriptionVariables` | type | — |
@@ -375,6 +380,7 @@
 | `BlockHashDocument` | const | — |
 | `ConnectDocument` | const | — |
 | `DisconnectDocument` | const | — |
+| `FetchTermsAndConditionsDocument` | const | — |
 | `TransactionStatusDocument` | const | — |
 | `DustLedgerEventsDocument` | const | — |
 | `ShieldedTransactionsDocument` | const | — |
@@ -394,7 +400,7 @@
 | `ConnectionHelper` | namespace | — |
 | `QueryRunner` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-node-client (1.0.1)
+## @midnight-ntwrk/wallet-sdk-node-client (1.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -421,7 +427,7 @@
 |--------|------|---------|
 | `TestTransactions` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-prover-client (1.1.0)
+## @midnight-ntwrk/wallet-sdk-prover-client (1.2.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -435,7 +441,7 @@
 | `HttpProverClient` | namespace | — |
 | `WasmProver` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-runtime (1.0.1)
+## @midnight-ntwrk/wallet-sdk-runtime (1.0.2)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -455,7 +461,7 @@
 | `StateChange` | namespace | — |
 | `VersionChangeType` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-shielded (2.0.0)
+## @midnight-ntwrk/wallet-sdk-shielded (2.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -502,7 +508,7 @@
 | `CoreWallet` | type | — |
 | `TransactionOps` | type | — |
 
-## @midnight-ntwrk/wallet-sdk-unshielded-wallet (2.0.0)
+## @midnight-ntwrk/wallet-sdk-unshielded-wallet (2.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -560,7 +566,7 @@
 | `TransactionHistoryStorage` | namespace | — |
 | `UnshieldedState` | namespace | — |
 
-## @midnight-ntwrk/wallet-sdk-utilities (1.0.1)
+## @midnight-ntwrk/wallet-sdk-utilities (1.1.0)
 
 | Symbol | Kind | Members |
 |--------|------|---------|
@@ -608,4 +614,4 @@
 | `buildTestEnvironmentVariables` | function | — |
 
 ---
-**Total: 465 symbols, 3 members across 13 packages**
+**Total: 471 symbols, 3 members across 13 packages**

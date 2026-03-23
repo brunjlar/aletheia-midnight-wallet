@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-03-15T00:17:06.340Z",
+  "extracted_at": "2026-03-21T21:33:00.470Z",
   "packages": [
     {
       "name": "abstractions",
@@ -45,7 +45,7 @@
     {
       "name": "address-format",
       "npm_name": "@midnight-ntwrk/wallet-sdk-address-format",
-      "version": "3.0.1",
+      "version": "3.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -126,7 +126,7 @@
     {
       "name": "capabilities",
       "npm_name": "@midnight-ntwrk/wallet-sdk-capabilities",
-      "version": "3.1.0",
+      "version": "3.2.0",
       "entry_points": [
         {
           "path": ".",
@@ -587,7 +587,7 @@
     {
       "name": "dust-wallet",
       "npm_name": "@midnight-ntwrk/wallet-sdk-dust-wallet",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "entry_points": [
         {
           "path": ".",
@@ -766,7 +766,7 @@
     {
       "name": "facade",
       "npm_name": "@midnight-ntwrk/wallet-sdk-facade",
-      "version": "2.0.0",
+      "version": "3.0.0",
       "entry_points": [
         {
           "path": ".",
@@ -840,6 +840,14 @@
             {
               "name": "FacadeState",
               "kind": "class"
+            },
+            {
+              "name": "TermsAndConditions",
+              "kind": "type"
+            },
+            {
+              "name": "FetchTermsAndConditionsConfiguration",
+              "kind": "type"
             },
             {
               "name": "DefaultConfiguration",
@@ -917,7 +925,7 @@
     {
       "name": "indexer-client",
       "npm_name": "@midnight-ntwrk/wallet-sdk-indexer-client",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "entry_points": [
         {
           "path": ".",
@@ -933,6 +941,10 @@
             },
             {
               "name": "BlockHash",
+              "kind": "const"
+            },
+            {
+              "name": "FetchTermsAndConditions",
               "kind": "const"
             },
             {
@@ -1340,6 +1352,14 @@
               "kind": "type"
             },
             {
+              "name": "FetchTermsAndConditionsQueryVariables",
+              "kind": "type"
+            },
+            {
+              "name": "FetchTermsAndConditionsQuery",
+              "kind": "type"
+            },
+            {
               "name": "TransactionStatusQueryVariables",
               "kind": "type"
             },
@@ -1389,6 +1409,10 @@
             },
             {
               "name": "DisconnectDocument",
+              "kind": "const"
+            },
+            {
+              "name": "FetchTermsAndConditionsDocument",
               "kind": "const"
             },
             {
@@ -1456,7 +1480,7 @@
     {
       "name": "node-client",
       "npm_name": "@midnight-ntwrk/wallet-sdk-node-client",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -1529,7 +1553,7 @@
     {
       "name": "prover-client",
       "npm_name": "@midnight-ntwrk/wallet-sdk-prover-client",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "entry_points": [
         {
           "path": ".",
@@ -1564,7 +1588,7 @@
     {
       "name": "runtime",
       "npm_name": "@midnight-ntwrk/wallet-sdk-runtime",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "entry_points": [
         {
           "path": ".",
@@ -1623,7 +1647,7 @@
     {
       "name": "shielded-wallet",
       "npm_name": "@midnight-ntwrk/wallet-sdk-shielded",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -1790,7 +1814,7 @@
     {
       "name": "unshielded-wallet",
       "npm_name": "@midnight-ntwrk/wallet-sdk-unshielded-wallet",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "entry_points": [
         {
           "path": ".",
@@ -2001,7 +2025,7 @@
     {
       "name": "utilities",
       "npm_name": "@midnight-ntwrk/wallet-sdk-utilities",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "entry_points": [
         {
           "path": ".",
