@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-03-21T21:33:00.511Z*
+*Extracted: 2026-03-30T13:44:35.108Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 

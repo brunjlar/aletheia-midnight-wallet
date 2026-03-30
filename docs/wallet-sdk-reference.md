@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ a1da64624b6a49aeed66d4f6466dee51fbab98ef -->
-<!-- Generated: 2026-03-21T21:35:12.098Z -->
+<!-- Source: upstream/midnight-wallet @ 0db32903454ba45d68fa3ddcf6510036f903bcd9 -->
+<!-- Generated: 2026-03-30T13:44:51.670Z -->
 
 ## 1. Introduction
 
@@ -82,8 +82,7 @@ for pattern matching.
 | Tier | Passing | Failing | Errors | Total |
 |------|---------|---------|--------|-------|
 | tier1 | 95 | 0 | 0 | 95 |
-| tier3 | 0 | 0 | 1 | 1 |
-| **Total** | **95** | **1** | | **96** |
+| **Total** | **95** | **0** | | **95** |
 
 ---
 
@@ -1314,12 +1313,6 @@ indexer's GraphQL schema. These are listed here for completeness.
 Complete index of all verification evidence, organized by test tier
 and package.
 
-### devnet
-
-| Test | Tier | Status |
-|------|------|--------|
-| devnet/error | tier3 | error |
-
 ### standalone
 
 | Test | Tier | Status |
@@ -1430,7 +1423,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | a1da64624b6a49aeed66d4f6466dee51fbab98ef |
+| Wallet SDK upstream | 0db32903454ba45d68fa3ddcf6510036f903bcd9 |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

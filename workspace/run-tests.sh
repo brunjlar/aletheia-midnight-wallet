@@ -33,7 +33,11 @@ echo ""
 
 # Step 2: Aggregate evidence (run all verification scripts)
 echo "--- Step 2: Aggregate evidence ---"
-node /app/tools/aggregate-evidence.mjs
+if [ "$DEVNET" = false ]; then
+  SKIP_TIER3=1 node /app/tools/aggregate-evidence.mjs
+else
+  node /app/tools/aggregate-evidence.mjs
+fi
 echo ""
 
 # Step 3: Tier 1 — Standalone type-check tests

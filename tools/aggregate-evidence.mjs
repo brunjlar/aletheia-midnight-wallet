@@ -16,8 +16,10 @@ const STATE_DIR = process.env.STATE_DIR || '/app/state';
 
 function runVerifyScripts(tier) {
   const pattern = tier ? `verify-${tier}-` : 'verify-';
+  const skipTier3 = process.env.SKIP_TIER3 === '1';
   const scripts = readdirSync(TOOLS_DIR)
     .filter(f => f.startsWith(pattern) && f.endsWith('.mjs'))
+    .filter(f => !(skipTier3 && f.includes('tier3')))
     .sort();
 
   const allResults = [];

@@ -174,9 +174,11 @@ if [ "${SKIP_PIPELINE:-}" != "1" ] && [ -f "$REPO_ROOT/workspace/run-tests.sh" ]
   log "Phase 4: Running verification pipeline..."
   PIPELINE_EXIT=0
 
-  if [ -f /.dockerenv ] || grep -q docker /proc/1/cgroup 2>/dev/null; then
-    bash "$REPO_ROOT/workspace/run-tests.sh" --skip-pdf 2>&1 || PIPELINE_EXIT=$?
+  if [ -d /app/workspace ] && [ -f /app/workspace/run-tests.sh ]; then
+    # Inside the toolchain container — run directly
+    bash /app/workspace/run-tests.sh --skip-pdf 2>&1 || PIPELINE_EXIT=$?
   else
+    # Outside the toolchain container — use docker compose
     docker compose -f "$REPO_ROOT/docker-compose.yml" run --rm --no-deps \
       toolchain-standalone bash /app/workspace/run-tests.sh --skip-pdf 2>&1 || PIPELINE_EXIT=$?
   fi
