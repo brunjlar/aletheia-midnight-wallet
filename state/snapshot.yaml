@@ -1,12 +1,12 @@
 schema: 1
 primary:
   repo: midnight-wallet
-  commit: 0529e6a9f71923d6eabd81bc529aa60b650e1bc6
+  commit: b7b4c1465b0dcb6a493191ad622faa40dc826dba
   ref: origin/main
 snapshot:
-  doc_commit: 8fe0bee4b6bcddd378f5bf0265d1549935170ec9
+  doc_commit: 7587d9a8d655cbbdbe01c152b3def3ead0f320a8
   status: verified
   created_by: self-update
-  predecessor: snapshot/midnight-wallet/0db32903
+  predecessor: snapshot/midnight-wallet/0529e6a9
 dependencies: {}
 artifacts: {}
