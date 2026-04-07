@@ -9,6 +9,10 @@ import {
   ProtocolVersion,
   NetworkId,
   SyncProgress,
+  // Added in 7f824321 (PM-19980), pending npm release:
+  // InMemoryTransactionHistoryStorage,
+  // NoOpTransactionHistoryStorage,
+  // TransactionHistoryStorage,
 } from '@midnight-ntwrk/wallet-sdk-abstractions';
 
 const results = [];
@@ -133,5 +137,9 @@ test('abstractions/SyncProgress-not-complete', () => {
   assert(!sp.isCompleteWithin(50n), 'Should not be within range of 50');
 });
 
+// TransactionHistoryStorage, InMemoryTransactionHistoryStorage, and
+// NoOpTransactionHistoryStorage added in upstream 7f824321 (PM-19980),
+// pending npm release. Runtime tests will be enabled once the packages
+// are published (abstractions > 2.0.0).
 console.log(JSON.stringify({ results }));
 process.exit(results.some(r => !r.pass) ? 1 : 0);

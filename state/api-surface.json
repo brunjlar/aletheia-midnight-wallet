@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-03-31T14:30:36.623Z",
+  "extracted_at": "2026-04-07T10:10:50.958Z",
   "packages": [
     {
       "name": "abstractions",
@@ -36,6 +36,18 @@
             },
             {
               "name": "SyncProgress",
+              "kind": "namespace"
+            },
+            {
+              "name": "InMemoryTransactionHistoryStorage",
+              "kind": "class"
+            },
+            {
+              "name": "NoOpTransactionHistoryStorage",
+              "kind": "class"
+            },
+            {
+              "name": "TransactionHistoryStorage",
               "kind": "namespace"
             }
           ]
@@ -773,6 +785,14 @@
           "source_file": "packages/facade/src/index.ts",
           "symbols": [
             {
+              "name": "WalletEntrySchema",
+              "kind": "const"
+            },
+            {
+              "name": "WalletEntry",
+              "kind": "type"
+            },
+            {
               "name": "FinalizedTransactionRecipe",
               "kind": "type"
             },
@@ -949,6 +969,10 @@
             },
             {
               "name": "TransactionStatus",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionHistoryDetail",
               "kind": "const"
             },
             {
@@ -1360,6 +1384,14 @@
               "kind": "type"
             },
             {
+              "name": "TransactionHistoryDetailQueryVariables",
+              "kind": "type"
+            },
+            {
+              "name": "TransactionHistoryDetailQuery",
+              "kind": "type"
+            },
+            {
               "name": "TransactionStatusQueryVariables",
               "kind": "type"
             },
@@ -1413,6 +1445,10 @@
             },
             {
               "name": "FetchTermsAndConditionsDocument",
+              "kind": "const"
+            },
+            {
+              "name": "TransactionHistoryDetailDocument",
               "kind": "const"
             },
             {
@@ -1658,6 +1694,10 @@
               "kind": "type"
             },
             {
+              "name": "ShieldedWalletServices",
+              "kind": "type"
+            },
+            {
               "name": "UnboundTransaction",
               "kind": "type"
             },
@@ -1692,6 +1732,14 @@
             {
               "name": "CustomShieldedWallet",
               "kind": "function"
+            },
+            {
+              "name": "ShieldedTransactionHistoryEntry",
+              "kind": "type"
+            },
+            {
+              "name": "ShieldedSectionSchema",
+              "kind": "const"
             }
           ]
         },
@@ -1825,6 +1873,10 @@
               "kind": "type"
             },
             {
+              "name": "UnshieldedWalletServices",
+              "kind": "type"
+            },
+            {
               "name": "UnshieldedWalletState",
               "kind": "class"
             },
@@ -1857,32 +1909,12 @@
               "kind": "function"
             },
             {
-              "name": "TransactionHistory",
+              "name": "UnshieldedTransactionHistoryEntry",
               "kind": "type"
             },
             {
-              "name": "InMemoryTransactionHistoryStorage",
-              "kind": "class"
-            },
-            {
-              "name": "NoOpTransactionHistoryStorage",
-              "kind": "class"
-            },
-            {
-              "name": "TransactionHash",
-              "kind": "type"
-            },
-            {
-              "name": "TransactionHistoryEntrySchema",
+              "name": "UnshieldedSectionSchema",
               "kind": "const"
-            },
-            {
-              "name": "TransactionHistoryEntry",
-              "kind": "type"
-            },
-            {
-              "name": "TransactionHistoryStorage",
-              "kind": "interface"
             },
             {
               "name": "PublicKey",
@@ -2009,10 +2041,6 @@
             {
               "name": "TransactionOps",
               "kind": "type"
-            },
-            {
-              "name": "TransactionHistoryStorage",
-              "kind": "namespace"
             },
             {
               "name": "UnshieldedState",

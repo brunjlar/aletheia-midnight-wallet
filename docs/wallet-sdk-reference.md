@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 6e678710566fb2e13c39dfb90169335d29302f99 -->
-<!-- Generated: 2026-03-31T14:30:52.851Z -->
+<!-- Source: upstream/midnight-wallet @ 7f8243219fbe0a77dbb0251f4848b09672f240d2 -->
+<!-- Generated: 2026-04-07T10:11:07.595Z -->
 
 ## 1. Introduction
 
@@ -81,8 +81,8 @@ for pattern matching.
 
 | Tier | Passing | Failing | Errors | Total |
 |------|---------|---------|--------|-------|
-| tier1 | 95 | 0 | 0 | 95 |
-| **Total** | **95** | **0** | | **95** |
+| tier1 | 96 | 0 | 0 | 96 |
+| **Total** | **96** | **0** | | **96** |
 
 ---
 
@@ -99,6 +99,9 @@ for pattern matching.
 | `ProtocolVersion` | namespace | — |
 | `NetworkId` | namespace | — |
 | `SyncProgress` | namespace | — |
+| `InMemoryTransactionHistoryStorage` | class | — |
+| `NoOpTransactionHistoryStorage` | class | — |
+| `TransactionHistoryStorage` | namespace | — |
 
 ### @midnight-ntwrk/wallet-sdk-address-format (3.1.0)
 
@@ -307,6 +310,8 @@ for pattern matching.
 
 | Symbol | Kind | Members |
 |--------|------|---------|
+| `WalletEntrySchema` | const | — |
+| `WalletEntry` | type | — |
 | `FinalizedTransactionRecipe` | type | — |
 | `UnboundTransactionRecipe` | type | — |
 | `UnprovenTransactionRecipe` | type | — |
@@ -351,6 +356,7 @@ for pattern matching.
 | `BlockHash` | const | — |
 | `FetchTermsAndConditions` | const | — |
 | `TransactionStatus` | const | — |
+| `TransactionHistoryDetail` | const | — |
 | `DustLedgerEvents` | const | — |
 | `ShieldedTransactions` | const | — |
 | `UnshieldedTransactions` | const | — |
@@ -453,6 +459,8 @@ for pattern matching.
 | `DisconnectMutation` | type | — |
 | `FetchTermsAndConditionsQueryVariables` | type | — |
 | `FetchTermsAndConditionsQuery` | type | — |
+| `TransactionHistoryDetailQueryVariables` | type | — |
+| `TransactionHistoryDetailQuery` | type | — |
 | `TransactionStatusQueryVariables` | type | — |
 | `TransactionStatusQuery` | type | — |
 | `DustLedgerEventsSubscriptionVariables` | type | — |
@@ -467,6 +475,7 @@ for pattern matching.
 | `ConnectDocument` | const | — |
 | `DisconnectDocument` | const | — |
 | `FetchTermsAndConditionsDocument` | const | — |
+| `TransactionHistoryDetailDocument` | const | — |
 | `TransactionStatusDocument` | const | — |
 | `DustLedgerEventsDocument` | const | — |
 | `ShieldedTransactionsDocument` | const | — |
@@ -552,6 +561,7 @@ for pattern matching.
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `ShieldedWalletCapabilities` | type | — |
+| `ShieldedWalletServices` | type | — |
 | `UnboundTransaction` | type | — |
 | `ShieldedWalletState` | class | — |
 | `ShieldedWallet` | type | — |
@@ -561,6 +571,8 @@ for pattern matching.
 | `DefaultShieldedConfiguration` | type | — |
 | `CustomizedShieldedWalletClass` | interface | — |
 | `CustomShieldedWallet` | function | — |
+| `ShieldedTransactionHistoryEntry` | type | — |
+| `ShieldedSectionSchema` | const | — |
 
 #### Sub-export: `./v1`
 
@@ -599,6 +611,7 @@ for pattern matching.
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `UnshieldedWalletCapabilities` | type | — |
+| `UnshieldedWalletServices` | type | — |
 | `UnshieldedWalletState` | class | — |
 | `UnshieldedWallet` | type | — |
 | `DefaultUnshieldedConfiguration` | type | — |
@@ -607,13 +620,8 @@ for pattern matching.
 | `CustomizedUnshieldedWallet` | type | — |
 | `CustomizedUnshieldedWalletClass` | interface | — |
 | `CustomUnshieldedWallet` | function | — |
-| `TransactionHistory` | type | — |
-| `InMemoryTransactionHistoryStorage` | class | — |
-| `NoOpTransactionHistoryStorage` | class | — |
-| `TransactionHash` | type | — |
-| `TransactionHistoryEntrySchema` | const | — |
-| `TransactionHistoryEntry` | type | — |
-| `TransactionHistoryStorage` | interface | — |
+| `UnshieldedTransactionHistoryEntry` | type | — |
+| `UnshieldedSectionSchema` | const | — |
 | `PublicKey` | type | — |
 | `UnshieldedKeystore` | interface | — |
 | `createKeystore` | const | — |
@@ -649,7 +657,6 @@ for pattern matching.
 | `UnboundTransaction` | type | — |
 | `IntentOf` | type | — |
 | `TransactionOps` | type | — |
-| `TransactionHistoryStorage` | namespace | — |
 | `UnshieldedState` | namespace | — |
 
 ### @midnight-ntwrk/wallet-sdk-utilities (1.1.0)
@@ -699,7 +706,7 @@ for pattern matching.
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
-**Total: 471 symbols, 3 members across 13 packages**
+**Total: 478 symbols, 3 members across 13 packages**
 
 ---
 
@@ -941,6 +948,7 @@ from the indexer schema (see Appendix A).
 | indexer-client/Disconnect-query-exists | PASS | — |
 | indexer-client/BlockHash-query-exists | PASS | — |
 | indexer-client/TransactionStatus-query-exists | PASS | — |
+| indexer-client/FetchTermsAndConditions-query-exists | PASS | — |
 | indexer-client/QueryClient-is-context-tag | PASS | — |
 | indexer-client/SubscriptionClient-is-context-tag | PASS | — |
 | indexer-client/ConnectionHelper-deriveWebSocketUrl | PASS | — |
@@ -1178,6 +1186,7 @@ indexer's GraphQL schema. These are listed here for completeness.
 | `BlockHash` | const |
 | `FetchTermsAndConditions` | const |
 | `TransactionStatus` | const |
+| `TransactionHistoryDetail` | const |
 | `DustLedgerEvents` | const |
 | `ShieldedTransactions` | const |
 | `UnshieldedTransactions` | const |
@@ -1280,6 +1289,8 @@ indexer's GraphQL schema. These are listed here for completeness.
 | `DisconnectMutation` | type |
 | `FetchTermsAndConditionsQueryVariables` | type |
 | `FetchTermsAndConditionsQuery` | type |
+| `TransactionHistoryDetailQueryVariables` | type |
+| `TransactionHistoryDetailQuery` | type |
 | `TransactionStatusQueryVariables` | type |
 | `TransactionStatusQuery` | type |
 | `DustLedgerEventsSubscriptionVariables` | type |
@@ -1294,6 +1305,7 @@ indexer's GraphQL schema. These are listed here for completeness.
 | `ConnectDocument` | const |
 | `DisconnectDocument` | const |
 | `FetchTermsAndConditionsDocument` | const |
+| `TransactionHistoryDetailDocument` | const |
 | `TransactionStatusDocument` | const |
 | `DustLedgerEventsDocument` | const |
 | `ShieldedTransactionsDocument` | const |
@@ -1375,6 +1387,7 @@ and package.
 | indexer-client/Disconnect-query-exists | tier1 | pass |
 | indexer-client/BlockHash-query-exists | tier1 | pass |
 | indexer-client/TransactionStatus-query-exists | tier1 | pass |
+| indexer-client/FetchTermsAndConditions-query-exists | tier1 | pass |
 | indexer-client/QueryClient-is-context-tag | tier1 | pass |
 | indexer-client/SubscriptionClient-is-context-tag | tier1 | pass |
 | indexer-client/ConnectionHelper-deriveWebSocketUrl | tier1 | pass |
@@ -1423,7 +1436,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 6e678710566fb2e13c39dfb90169335d29302f99 |
+| Wallet SDK upstream | 7f8243219fbe0a77dbb0251f4848b09672f240d2 |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

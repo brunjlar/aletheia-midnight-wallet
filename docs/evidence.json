@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-31T14:30:43.674Z",
-  "total": 95,
-  "passing": 95,
+  "generated_at": "2026-04-07T10:10:58.229Z",
+  "total": 96,
+  "passing": 96,
   "failing": 0,
   "errors": 0,
   "results": [
@@ -406,6 +406,13 @@
     },
     {
       "name": "indexer-client/TransactionStatus-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/FetchTermsAndConditions-query-exists",
       "status": "pass",
       "tier": "tier1",
       "category": "standalone",

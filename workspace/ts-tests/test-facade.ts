@@ -15,6 +15,12 @@ import {
   type CombinedSwapInputs,
   type CombinedSwapOutputs,
   type DefaultConfiguration,
+  // Published in facade@3.0.0:
+  type TermsAndConditions,
+  type FetchTermsAndConditionsConfiguration,
+  // Added in upstream 7f824321 (PM-19980), pending npm release:
+  // WalletEntrySchema,
+  // type WalletEntry,
 } from '@midnight-ntwrk/wallet-sdk-facade';
 import type { Observable } from 'rxjs';
 
@@ -52,3 +58,21 @@ const hasProving = facade.provingService;
 declare const shieldedTransfer: ShieldedTokenTransfer;
 declare const unshieldedTransfer: UnshieldedTokenTransfer;
 declare const combined: CombinedTokenTransfer;
+
+// --- TermsAndConditions ---
+// [evidence: facade/TermsAndConditions-type]
+// Published in facade@3.0.0: fetches T&C from indexer's system parameters.
+declare const tc: TermsAndConditions;
+const _tcHash: string = tc.hash;
+const _tcUrl: string = tc.url;
+
+// --- FetchTermsAndConditionsConfiguration ---
+// [evidence: facade/FetchTermsAndConditionsConfiguration-type]
+declare const fetchTcConfig: FetchTermsAndConditionsConfiguration;
+const _indexerUrl: string = fetchTcConfig.indexerClientConnection.indexerHttpUrl;
+
+// --- WalletEntry (pending npm release) ---
+// Added in upstream 7f824321 (PM-19980): full tx history entry combining
+// common fields with optional shielded/unshielded sections.
+// WalletEntrySchema and WalletEntry type will be enabled once abstractions
+// > 2.0.0 is published (dependency on TransactionHistoryStorage).

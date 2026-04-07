@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-03-31T14:30:36.667Z*
+*Extracted: 2026-04-07T10:10:51.003Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -13,6 +13,9 @@
 | `ProtocolVersion` | namespace | — |
 | `NetworkId` | namespace | — |
 | `SyncProgress` | namespace | — |
+| `InMemoryTransactionHistoryStorage` | class | — |
+| `NoOpTransactionHistoryStorage` | class | — |
+| `TransactionHistoryStorage` | namespace | — |
 
 ## @midnight-ntwrk/wallet-sdk-address-format (3.1.0)
 
@@ -221,6 +224,8 @@
 
 | Symbol | Kind | Members |
 |--------|------|---------|
+| `WalletEntrySchema` | const | — |
+| `WalletEntry` | type | — |
 | `FinalizedTransactionRecipe` | type | — |
 | `UnboundTransactionRecipe` | type | — |
 | `UnprovenTransactionRecipe` | type | — |
@@ -265,6 +270,7 @@
 | `BlockHash` | const | — |
 | `FetchTermsAndConditions` | const | — |
 | `TransactionStatus` | const | — |
+| `TransactionHistoryDetail` | const | — |
 | `DustLedgerEvents` | const | — |
 | `ShieldedTransactions` | const | — |
 | `UnshieldedTransactions` | const | — |
@@ -367,6 +373,8 @@
 | `DisconnectMutation` | type | — |
 | `FetchTermsAndConditionsQueryVariables` | type | — |
 | `FetchTermsAndConditionsQuery` | type | — |
+| `TransactionHistoryDetailQueryVariables` | type | — |
+| `TransactionHistoryDetailQuery` | type | — |
 | `TransactionStatusQueryVariables` | type | — |
 | `TransactionStatusQuery` | type | — |
 | `DustLedgerEventsSubscriptionVariables` | type | — |
@@ -381,6 +389,7 @@
 | `ConnectDocument` | const | — |
 | `DisconnectDocument` | const | — |
 | `FetchTermsAndConditionsDocument` | const | — |
+| `TransactionHistoryDetailDocument` | const | — |
 | `TransactionStatusDocument` | const | — |
 | `DustLedgerEventsDocument` | const | — |
 | `ShieldedTransactionsDocument` | const | — |
@@ -466,6 +475,7 @@
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `ShieldedWalletCapabilities` | type | — |
+| `ShieldedWalletServices` | type | — |
 | `UnboundTransaction` | type | — |
 | `ShieldedWalletState` | class | — |
 | `ShieldedWallet` | type | — |
@@ -475,6 +485,8 @@
 | `DefaultShieldedConfiguration` | type | — |
 | `CustomizedShieldedWalletClass` | interface | — |
 | `CustomShieldedWallet` | function | — |
+| `ShieldedTransactionHistoryEntry` | type | — |
+| `ShieldedSectionSchema` | const | — |
 
 ### Sub-export: `./v1`
 
@@ -513,6 +525,7 @@
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `UnshieldedWalletCapabilities` | type | — |
+| `UnshieldedWalletServices` | type | — |
 | `UnshieldedWalletState` | class | — |
 | `UnshieldedWallet` | type | — |
 | `DefaultUnshieldedConfiguration` | type | — |
@@ -521,13 +534,8 @@
 | `CustomizedUnshieldedWallet` | type | — |
 | `CustomizedUnshieldedWalletClass` | interface | — |
 | `CustomUnshieldedWallet` | function | — |
-| `TransactionHistory` | type | — |
-| `InMemoryTransactionHistoryStorage` | class | — |
-| `NoOpTransactionHistoryStorage` | class | — |
-| `TransactionHash` | type | — |
-| `TransactionHistoryEntrySchema` | const | — |
-| `TransactionHistoryEntry` | type | — |
-| `TransactionHistoryStorage` | interface | — |
+| `UnshieldedTransactionHistoryEntry` | type | — |
+| `UnshieldedSectionSchema` | const | — |
 | `PublicKey` | type | — |
 | `UnshieldedKeystore` | interface | — |
 | `createKeystore` | const | — |
@@ -563,7 +571,6 @@
 | `UnboundTransaction` | type | — |
 | `IntentOf` | type | — |
 | `TransactionOps` | type | — |
-| `TransactionHistoryStorage` | namespace | — |
 | `UnshieldedState` | namespace | — |
 
 ## @midnight-ntwrk/wallet-sdk-utilities (1.1.0)
@@ -614,4 +621,4 @@
 | `buildTestEnvironmentVariables` | function | — |
 
 ---
-**Total: 471 symbols, 3 members across 13 packages**
+**Total: 478 symbols, 3 members across 13 packages**

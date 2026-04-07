@@ -7,6 +7,9 @@ import {
   Disconnect,
   BlockHash,
   TransactionStatus,
+  FetchTermsAndConditions,
+  // Added in upstream 7f824321 (PM-19980), pending npm release:
+  // TransactionHistoryDetail,
 } from '@midnight-ntwrk/wallet-sdk-indexer-client';
 
 import {
@@ -49,6 +52,15 @@ test('indexer-client/BlockHash-query-exists', () => {
 test('indexer-client/TransactionStatus-query-exists', () => {
   assert(TransactionStatus !== undefined, 'TransactionStatus query should exist');
 });
+
+test('indexer-client/FetchTermsAndConditions-query-exists', () => {
+  assert(FetchTermsAndConditions !== undefined, 'FetchTermsAndConditions query should exist');
+  assert(typeof FetchTermsAndConditions === 'object', 'FetchTermsAndConditions should be a query object');
+});
+
+// TransactionHistoryDetail query added in upstream 7f824321 (PM-19980),
+// pending npm release. Test will be enabled once indexer-client > 1.2.0
+// is published.
 
 // === Effect layer ===
 

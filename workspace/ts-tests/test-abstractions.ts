@@ -9,6 +9,10 @@ import {
   ProtocolVersion,
   NetworkId,
   SyncProgress,
+  // Added in 7f824321 (PM-19980), pending npm release:
+  // InMemoryTransactionHistoryStorage,
+  // NoOpTransactionHistoryStorage,
+  // TransactionHistoryStorage,
 } from '@midnight-ntwrk/wallet-sdk-abstractions';
 
 // --- WalletSeed ---
@@ -59,3 +63,11 @@ const sp: SyncProgress.SyncProgress = SyncProgress.createSyncProgress({
 });
 const isComplete: boolean = sp.isStrictlyComplete();
 const isCloseEnough: boolean = sp.isCompleteWithin(50n);
+
+// --- TransactionHistoryStorage (pending npm release) ---
+// Added in upstream commit 7f824321 (PM-19980: Reimplement TX history).
+// These types are in the source but not yet published to npm:
+//   - TransactionHistoryStorage namespace (interface, schemas, types)
+//   - InMemoryTransactionHistoryStorage class (moved from unshielded-wallet)
+//   - NoOpTransactionHistoryStorage class (moved from unshielded-wallet)
+// Type-check and runtime tests will be enabled once packages are released.
