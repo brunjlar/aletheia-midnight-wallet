@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ f9b02a5f98b329a1c8d05607b625beb389b87d0e -->
-<!-- Generated: 2026-04-07T13:22:38.995Z -->
+<!-- Source: upstream/midnight-wallet @ efa51f38805f152880f6e589e889c99caeec9dac -->
+<!-- Generated: 2026-04-07T23:36:31.051Z -->
 
 ## 1. Introduction
 
@@ -1443,7 +1443,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | f9b02a5f98b329a1c8d05607b625beb389b87d0e |
+| Wallet SDK upstream | efa51f38805f152880f6e589e889c99caeec9dac |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |
