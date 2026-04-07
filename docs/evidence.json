@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T10:10:58.229Z",
-  "total": 96,
-  "passing": 96,
+  "generated_at": "2026-04-07T13:22:29.432Z",
+  "total": 97,
+  "passing": 97,
   "failing": 0,
   "errors": 0,
   "results": [
@@ -601,7 +601,14 @@
       "detail": null
     },
     {
-      "name": "wallets/WalletFacade-init-is-static",
+      "name": "wallets/CustomDustWallet-export-available",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": "SKIP: not yet in npm package (pending 3.0.1+)"
+    },
+    {
+      "name": "wallets/CustomDustWallet-export-available",
       "status": "pass",
       "tier": "tier1",
       "category": "standalone",

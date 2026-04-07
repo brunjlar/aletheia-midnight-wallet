@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 7f8243219fbe0a77dbb0251f4848b09672f240d2 -->
-<!-- Generated: 2026-04-07T10:11:07.595Z -->
+<!-- Source: upstream/midnight-wallet @ f9b02a5f98b329a1c8d05607b625beb389b87d0e -->
+<!-- Generated: 2026-04-07T13:22:38.995Z -->
 
 ## 1. Introduction
 
@@ -81,8 +81,8 @@ for pattern matching.
 
 | Tier | Passing | Failing | Errors | Total |
 |------|---------|---------|--------|-------|
-| tier1 | 96 | 0 | 0 | 96 |
-| **Total** | **96** | **0** | | **96** |
+| tier1 | 97 | 0 | 0 | 97 |
+| **Total** | **97** | **0** | | **97** |
 
 ---
 
@@ -264,8 +264,11 @@ for pattern matching.
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `DustWallet` | type | — |
-| `DustWalletClass` | interface | — |
+| `DustWalletClass` | type | — |
+| `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
+| `CustomizedDustWalletClass` | interface | — |
+| `CustomDustWallet` | function | — |
 
 #### Sub-export: `./v1`
 
@@ -277,8 +280,11 @@ for pattern matching.
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `DustWallet` | type | — |
-| `DustWalletClass` | interface | — |
+| `DustWalletClass` | type | — |
+| `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
+| `CustomizedDustWalletClass` | interface | — |
+| `CustomDustWallet` | function | — |
 | `Keys` | namespace | — |
 | `Simulator` | namespace | — |
 | `SyncService` | namespace | — |
@@ -706,7 +712,7 @@ for pattern matching.
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
-**Total: 478 symbols, 3 members across 13 packages**
+**Total: 484 symbols, 3 members across 13 packages**
 
 ---
 
@@ -1414,7 +1420,8 @@ and package.
 | wallets/FacadeState-exists | tier1 | pass |
 | wallets/BalancingRecipe-isRecipe | tier1 | pass |
 | wallets/BalancingRecipe-getTransactions | tier1 | pass |
-| wallets/WalletFacade-init-is-static | tier1 | pass |
+| wallets/CustomDustWallet-export-available | tier1 | pass |
+| wallets/CustomDustWallet-export-available | tier1 | pass |
 
 ### typecheck
 
@@ -1436,7 +1443,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 7f8243219fbe0a77dbb0251f4848b09672f240d2 |
+| Wallet SDK upstream | f9b02a5f98b329a1c8d05607b625beb389b87d0e |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

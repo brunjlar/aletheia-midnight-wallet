@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-04-07T10:10:51.003Z*
+*Extracted: 2026-04-07T13:22:22.214Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -178,8 +178,11 @@
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `DustWallet` | type | — |
-| `DustWalletClass` | interface | — |
+| `DustWalletClass` | type | — |
+| `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
+| `CustomizedDustWalletClass` | interface | — |
+| `CustomDustWallet` | function | — |
 
 ### Sub-export: `./v1`
 
@@ -191,8 +194,11 @@
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `DustWallet` | type | — |
-| `DustWalletClass` | interface | — |
+| `DustWalletClass` | type | — |
+| `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
+| `CustomizedDustWalletClass` | interface | — |
+| `CustomDustWallet` | function | — |
 | `Keys` | namespace | — |
 | `Simulator` | namespace | — |
 | `SyncService` | namespace | — |
@@ -621,4 +627,4 @@
 | `buildTestEnvironmentVariables` | function | — |
 
 ---
-**Total: 478 symbols, 3 members across 13 packages**
+**Total: 484 symbols, 3 members across 13 packages**

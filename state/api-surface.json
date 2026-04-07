@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-04-07T10:10:50.958Z",
+  "extracted_at": "2026-04-07T13:22:22.169Z",
   "packages": [
     {
       "name": "abstractions",
@@ -623,11 +623,23 @@
             },
             {
               "name": "DustWalletClass",
-              "kind": "interface"
+              "kind": "type"
+            },
+            {
+              "name": "CustomizedDustWallet",
+              "kind": "type"
             },
             {
               "name": "DefaultDustConfiguration",
               "kind": "type"
+            },
+            {
+              "name": "CustomizedDustWalletClass",
+              "kind": "interface"
+            },
+            {
+              "name": "CustomDustWallet",
+              "kind": "function"
             }
           ]
         },
@@ -661,11 +673,23 @@
             },
             {
               "name": "DustWalletClass",
-              "kind": "interface"
+              "kind": "type"
+            },
+            {
+              "name": "CustomizedDustWallet",
+              "kind": "type"
             },
             {
               "name": "DefaultDustConfiguration",
               "kind": "type"
+            },
+            {
+              "name": "CustomizedDustWalletClass",
+              "kind": "interface"
+            },
+            {
+              "name": "CustomDustWallet",
+              "kind": "function"
             },
             {
               "name": "Keys",

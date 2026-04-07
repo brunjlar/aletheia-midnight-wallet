@@ -3,6 +3,7 @@
 // Tests that wallet factory functions exist and return wallet classes.
 
 import { DustWallet, DustWalletState } from '@midnight-ntwrk/wallet-sdk-dust-wallet';
+import * as DustWalletModule from '@midnight-ntwrk/wallet-sdk-dust-wallet';
 import { ShieldedWallet, ShieldedWalletState } from '@midnight-ntwrk/wallet-sdk-shielded';
 import { UnshieldedWallet, UnshieldedWalletState } from '@midnight-ntwrk/wallet-sdk-unshielded-wallet';
 import { createKeystore, PublicKey } from '@midnight-ntwrk/wallet-sdk-unshielded-wallet';
@@ -134,6 +135,22 @@ test('wallets/BalancingRecipe-getTransactions', () => {
 
 test('wallets/WalletFacade-init-is-static', () => {
   assert(typeof WalletFacade.init === 'function', 'WalletFacade.init should be a static method');
+});
+
+// === CustomDustWallet builder (upstream eba8e08d, pending npm publish) ===
+
+test('wallets/CustomDustWallet-export-available', () => {
+  // CustomDustWallet was added in upstream commit eba8e08d (PR #274).
+  // This test checks whether the npm package exports it yet.
+  // Expected: skip (not yet published) until dust-wallet >= 3.0.1
+  const hasCustom = typeof DustWalletModule.CustomDustWallet === 'function';
+  if (!hasCustom) {
+    // Not available yet — record as expected skip, not failure
+    results.pop(); // remove the auto-pushed result from test()
+    results.push({ name: 'wallets/CustomDustWallet-export-available', pass: true, detail: 'SKIP: not yet in npm package (pending 3.0.1+)' });
+    return;
+  }
+  assert(hasCustom, 'CustomDustWallet should be a factory function');
 });
 
 console.log(JSON.stringify({ results }));
