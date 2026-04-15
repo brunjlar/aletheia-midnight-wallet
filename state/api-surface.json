@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-04-13T13:02:27.202Z",
+  "extracted_at": "2026-04-15T15:19:14.152Z",
   "packages": [
     {
       "name": "abstractions",
@@ -301,6 +301,18 @@
               "kind": "const"
             },
             {
+              "name": "Simulator",
+              "kind": "class"
+            },
+            {
+              "name": "immediateBlockProducer",
+              "kind": "const"
+            },
+            {
+              "name": "SimulatorConfig",
+              "kind": "type"
+            },
+            {
               "name": "SubmissionEvent",
               "kind": "const"
             },
@@ -593,6 +605,24 @@
               "kind": "const"
             }
           ]
+        },
+        {
+          "path": "./simulation",
+          "source_file": "packages/capabilities/src/simulation/index.ts",
+          "symbols": [
+            {
+              "name": "Simulator",
+              "kind": "class"
+            },
+            {
+              "name": "immediateBlockProducer",
+              "kind": "const"
+            },
+            {
+              "name": "SimulatorConfig",
+              "kind": "type"
+            }
+          ]
         }
       ]
     },
@@ -618,14 +648,6 @@
               "kind": "type"
             },
             {
-              "name": "DustWallet",
-              "kind": "type"
-            },
-            {
-              "name": "DustWalletClass",
-              "kind": "type"
-            },
-            {
               "name": "CustomizedDustWallet",
               "kind": "type"
             },
@@ -636,6 +658,14 @@
             {
               "name": "CustomizedDustWalletClass",
               "kind": "interface"
+            },
+            {
+              "name": "DustWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletClass",
+              "kind": "type"
             },
             {
               "name": "CustomDustWallet",
@@ -668,14 +698,6 @@
               "kind": "type"
             },
             {
-              "name": "DustWallet",
-              "kind": "type"
-            },
-            {
-              "name": "DustWalletClass",
-              "kind": "type"
-            },
-            {
               "name": "CustomizedDustWallet",
               "kind": "type"
             },
@@ -686,6 +708,14 @@
             {
               "name": "CustomizedDustWalletClass",
               "kind": "interface"
+            },
+            {
+              "name": "DustWallet",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletClass",
+              "kind": "type"
             },
             {
               "name": "CustomDustWallet",
@@ -817,6 +847,10 @@
               "kind": "type"
             },
             {
+              "name": "mergeWalletEntries",
+              "kind": "const"
+            },
+            {
               "name": "FinalizedTransactionRecipe",
               "kind": "type"
             },
@@ -884,6 +918,14 @@
             {
               "name": "FacadeState",
               "kind": "class"
+            },
+            {
+              "name": "Clock",
+              "kind": "type"
+            },
+            {
+              "name": "systemClock",
+              "kind": "const"
             },
             {
               "name": "TermsAndConditions",
@@ -1756,14 +1798,6 @@
             {
               "name": "CustomShieldedWallet",
               "kind": "function"
-            },
-            {
-              "name": "ShieldedTransactionHistoryEntry",
-              "kind": "type"
-            },
-            {
-              "name": "ShieldedSectionSchema",
-              "kind": "const"
             }
           ]
         },

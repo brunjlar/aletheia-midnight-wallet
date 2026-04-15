@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ fefa2e6ad51aa7985684775ca43941f27458c6be -->
-<!-- Generated: 2026-04-13T13:02:48.384Z -->
+<!-- Source: upstream/midnight-wallet @ c1ae3695a3695f0b2ac70329d4fe855263b62d70 -->
+<!-- Generated: 2026-04-15T15:19:31.286Z -->
 
 ## 1. Introduction
 
@@ -168,6 +168,9 @@ for pattern matching.
 | `makeServerProvingService` | const | — |
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
+| `Simulator` | class | — |
+| `immediateBlockProducer` | const | — |
+| `SimulatorConfig` | type | — |
 | `SubmissionEvent` | const | — |
 | `Finalized` | type | — |
 | `Submitted` | type | — |
@@ -256,6 +259,14 @@ for pattern matching.
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
 
+#### Sub-export: `./simulation`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+| `Simulator` | class | — |
+| `immediateBlockProducer` | const | — |
+| `SimulatorConfig` | type | — |
+
 ### @midnight-ntwrk/wallet-sdk-dust-wallet (3.0.0)
 
 | Symbol | Kind | Members |
@@ -263,11 +274,11 @@ for pattern matching.
 | `DustWalletCapabilities` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
-| `DustWallet` | type | — |
-| `DustWalletClass` | type | — |
 | `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
 | `CustomizedDustWalletClass` | interface | — |
+| `DustWallet` | type | — |
+| `DustWalletClass` | type | — |
 | `CustomDustWallet` | function | — |
 
 #### Sub-export: `./v1`
@@ -279,11 +290,11 @@ for pattern matching.
 | `DustWalletCapabilities` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
-| `DustWallet` | type | — |
-| `DustWalletClass` | type | — |
 | `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
 | `CustomizedDustWalletClass` | interface | — |
+| `DustWallet` | type | — |
+| `DustWalletClass` | type | — |
 | `CustomDustWallet` | function | — |
 | `Keys` | namespace | — |
 | `Simulator` | namespace | — |
@@ -318,6 +329,7 @@ for pattern matching.
 |--------|------|---------|
 | `WalletEntrySchema` | const | — |
 | `WalletEntry` | type | — |
+| `mergeWalletEntries` | const | — |
 | `FinalizedTransactionRecipe` | type | — |
 | `UnboundTransactionRecipe` | type | — |
 | `UnprovenTransactionRecipe` | type | — |
@@ -331,6 +343,8 @@ for pattern matching.
 | `TransactionIdentifier` | type | — |
 | `UtxoWithMeta` | type | — |
 | `FacadeState` | class | — |
+| `Clock` | type | — |
+| `systemClock` | const | — |
 | `TermsAndConditions` | type | — |
 | `FetchTermsAndConditionsConfiguration` | type | — |
 | `DefaultConfiguration` | type | — |
@@ -577,8 +591,6 @@ for pattern matching.
 | `DefaultShieldedConfiguration` | type | — |
 | `CustomizedShieldedWalletClass` | interface | — |
 | `CustomShieldedWallet` | function | — |
-| `ShieldedTransactionHistoryEntry` | type | — |
-| `ShieldedSectionSchema` | const | — |
 
 #### Sub-export: `./v1`
 
@@ -712,7 +724,7 @@ for pattern matching.
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
-**Total: 484 symbols, 3 members across 13 packages**
+**Total: 491 symbols, 3 members across 13 packages**
 
 ---
 
@@ -1443,7 +1455,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | fefa2e6ad51aa7985684775ca43941f27458c6be |
+| Wallet SDK upstream | c1ae3695a3695f0b2ac70329d4fe855263b62d70 |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

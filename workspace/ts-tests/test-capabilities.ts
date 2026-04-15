@@ -66,3 +66,24 @@ import {
   PendingTransactionsServiceImpl,
   PendingTransactions,
 } from '@midnight-ntwrk/wallet-sdk-capabilities/pendingTransactions';
+
+// --- Simulator (unified in capabilities, PM-22421 / PR #249) ---
+// [evidence: capabilities/simulator-unified — source-verified, npm-pending]
+// Added in upstream c1ae3695: unified Simulator consolidates per-wallet
+// simulator implementations into a single class in capabilities.
+// Exports: Simulator (class), SimulatorConfig (type), immediateBlockProducer (const)
+// Also re-exported via /simulation sub-path.
+// Once npm package is updated, uncomment these:
+// import {
+//   Simulator,
+//   immediateBlockProducer,
+//   type SimulatorConfig,
+// } from '@midnight-ntwrk/wallet-sdk-capabilities';
+// import {
+//   Simulator as SimulatorFromSubpath,
+//   immediateBlockProducer as immediateBlockProducerFromSubpath,
+//   type SimulatorConfig as SimulatorConfigFromSubpath,
+// } from '@midnight-ntwrk/wallet-sdk-capabilities/simulation';
+// type _SimulatorIsClass = InstanceType<typeof Simulator>;
+// const _blockProducer: typeof immediateBlockProducer = immediateBlockProducer;
+// type _SubpathMatch = typeof SimulatorFromSubpath extends typeof Simulator ? true : never;

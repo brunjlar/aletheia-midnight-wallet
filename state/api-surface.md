@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-04-13T13:02:27.247Z*
+*Extracted: 2026-04-15T15:19:14.202Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -82,6 +82,9 @@
 | `makeServerProvingService` | const | — |
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
+| `Simulator` | class | — |
+| `immediateBlockProducer` | const | — |
+| `SimulatorConfig` | type | — |
 | `SubmissionEvent` | const | — |
 | `Finalized` | type | — |
 | `Submitted` | type | — |
@@ -170,6 +173,14 @@
 | `makeWasmProvingService` | const | — |
 | `makeSimulatorProvingService` | const | — |
 
+### Sub-export: `./simulation`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+| `Simulator` | class | — |
+| `immediateBlockProducer` | const | — |
+| `SimulatorConfig` | type | — |
+
 ## @midnight-ntwrk/wallet-sdk-dust-wallet (3.0.0)
 
 | Symbol | Kind | Members |
@@ -177,11 +188,11 @@
 | `DustWalletCapabilities` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
-| `DustWallet` | type | — |
-| `DustWalletClass` | type | — |
 | `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
 | `CustomizedDustWalletClass` | interface | — |
+| `DustWallet` | type | — |
+| `DustWalletClass` | type | — |
 | `CustomDustWallet` | function | — |
 
 ### Sub-export: `./v1`
@@ -193,11 +204,11 @@
 | `DustWalletCapabilities` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
-| `DustWallet` | type | — |
-| `DustWalletClass` | type | — |
 | `CustomizedDustWallet` | type | — |
 | `DefaultDustConfiguration` | type | — |
 | `CustomizedDustWalletClass` | interface | — |
+| `DustWallet` | type | — |
+| `DustWalletClass` | type | — |
 | `CustomDustWallet` | function | — |
 | `Keys` | namespace | — |
 | `Simulator` | namespace | — |
@@ -232,6 +243,7 @@
 |--------|------|---------|
 | `WalletEntrySchema` | const | — |
 | `WalletEntry` | type | — |
+| `mergeWalletEntries` | const | — |
 | `FinalizedTransactionRecipe` | type | — |
 | `UnboundTransactionRecipe` | type | — |
 | `UnprovenTransactionRecipe` | type | — |
@@ -245,6 +257,8 @@
 | `TransactionIdentifier` | type | — |
 | `UtxoWithMeta` | type | — |
 | `FacadeState` | class | — |
+| `Clock` | type | — |
+| `systemClock` | const | — |
 | `TermsAndConditions` | type | — |
 | `FetchTermsAndConditionsConfiguration` | type | — |
 | `DefaultConfiguration` | type | — |
@@ -491,8 +505,6 @@
 | `DefaultShieldedConfiguration` | type | — |
 | `CustomizedShieldedWalletClass` | interface | — |
 | `CustomShieldedWallet` | function | — |
-| `ShieldedTransactionHistoryEntry` | type | — |
-| `ShieldedSectionSchema` | const | — |
 
 ### Sub-export: `./v1`
 
@@ -627,4 +639,4 @@
 | `buildTestEnvironmentVariables` | function | — |
 
 ---
-**Total: 484 symbols, 3 members across 13 packages**
+**Total: 491 symbols, 3 members across 13 packages**

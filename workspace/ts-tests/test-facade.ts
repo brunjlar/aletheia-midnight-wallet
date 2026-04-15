@@ -71,6 +71,18 @@ const _tcUrl: string = tc.url;
 declare const fetchTcConfig: FetchTermsAndConditionsConfiguration;
 const _indexerUrl: string = fetchTcConfig.indexerClientConnection.indexerHttpUrl;
 
+// --- Clock, systemClock, mergeWalletEntries (PR #249 / PM-22421) ---
+// [evidence: facade/Clock-type — source-verified, npm-pending]
+// Added in upstream c1ae3695: Clock interface for simulation time
+// decoupling, systemClock (real-time implementation), and
+// mergeWalletEntries helper for tx history consolidation.
+// Once npm package is updated, uncomment these:
+// import { type Clock, systemClock, mergeWalletEntries } from '@midnight-ntwrk/wallet-sdk-facade';
+// declare const clock: Clock;
+// const _now: Date = clock.now();
+// const _systemClock: Clock = systemClock;
+// const _merge: typeof mergeWalletEntries = mergeWalletEntries;
+
 // --- WalletEntry (pending npm release) ---
 // Added in upstream 7f824321 (PM-19980): full tx history entry combining
 // common fields with optional shielded/unshielded sections.

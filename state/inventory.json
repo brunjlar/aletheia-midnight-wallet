@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "timestamp": "2026-04-13T13:02:45.658Z",
+  "timestamp": "2026-04-15T15:19:28.498Z",
   "repo": "midnight-wallet",
   "doc_repo": "wallet",
   "api_surface": {
     "total_packages": 13,
-    "total_symbols": 484,
+    "total_symbols": 491,
     "packages": [
       {
         "name": "abstractions",
@@ -17,7 +17,7 @@
       },
       {
         "name": "capabilities",
-        "symbols": 106
+        "symbols": 112
       },
       {
         "name": "dust-wallet",
@@ -25,7 +25,7 @@
       },
       {
         "name": "facade",
-        "symbols": 20
+        "symbols": 23
       },
       {
         "name": "hd",
@@ -49,7 +49,7 @@
       },
       {
         "name": "shielded-wallet",
-        "symbols": 40
+        "symbols": 38
       },
       {
         "name": "unshielded-wallet",
