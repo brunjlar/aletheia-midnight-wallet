@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 20a87dea14c12c8a1e18de6bc17ea9167d5bd2a5 -->
-<!-- Generated: 2026-04-19T16:23:09.674Z -->
+<!-- Source: upstream/midnight-wallet @ 3763803939b9bf32601ddb4828ef67698aaa7937 -->
+<!-- Generated: 2026-04-20T17:34:53.686Z -->
 
 ## 1. Introduction
 
@@ -272,6 +272,7 @@ for pattern matching.
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `DustWalletCapabilities` | type | — |
+| `DustWalletServices` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `CustomizedDustWallet` | type | — |
@@ -288,6 +289,7 @@ for pattern matching.
 | `PublicKey` | type | — |
 | `CoreWallet` | type | — |
 | `DustWalletCapabilities` | type | — |
+| `DustWalletServices` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `CustomizedDustWallet` | type | — |
@@ -322,6 +324,10 @@ for pattern matching.
 | `NetworkId` | type | — |
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
+| `TransactionHistory` | namespace | — |
+| `DustSectionSchema` | const | — |
+| `DustUtxoInfoSchema` | const | — |
+| `mergeDustSections` | const | — |
 
 ### @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 
@@ -724,7 +730,7 @@ for pattern matching.
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
-**Total: 491 symbols, 3 members across 13 packages**
+**Total: 497 symbols, 3 members across 13 packages**
 
 ---
 
@@ -1455,7 +1461,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 20a87dea14c12c8a1e18de6bc17ea9167d5bd2a5 |
+| Wallet SDK upstream | 3763803939b9bf32601ddb4828ef67698aaa7937 |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

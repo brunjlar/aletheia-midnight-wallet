@@ -32,6 +32,22 @@ const stateObs: Observable<DustWalletState> = api.state;
 const feePromise: Promise<bigint> = api.calculateFee([] as any);
 const stopPromise: Promise<void> = api.stop();
 
+// --- DustWalletServices ---
+// [evidence: dust/DustWalletServices-type — source-verified, npm-pending]
+// Added in upstream 37638039 (feat: add txHistory to dust wallet #331).
+// DustWalletState now exposes a `services` property containing transactionHistory.
+// DustSectionSchema / DustUtxoInfoSchema / mergeDustSections provide Effect Schema
+// definitions for serializing dust transaction history entries.
+// TransactionHistory namespace exports the full service interface.
+// Once npm package is updated (3.1.0+), uncomment these:
+// import { type DustWalletServices } from '@midnight-ntwrk/wallet-sdk-dust-wallet';
+// import { DustSectionSchema, DustUtxoInfoSchema, mergeDustSections, TransactionHistory } from '@midnight-ntwrk/wallet-sdk-dust-wallet/v1';
+// declare const services: DustWalletServices;
+// const _txHistory: services.transactionHistory;
+// const _dustSchema: typeof DustSectionSchema = DustSectionSchema;
+// const _utxoSchema: typeof DustUtxoInfoSchema = DustUtxoInfoSchema;
+// const _merge: typeof mergeDustSections = mergeDustSections;
+
 // --- CustomDustWallet builder pattern (pending npm publish) ---
 // [evidence: dust/CustomDustWallet-types — source-verified, npm-pending]
 // Once npm package is updated, uncomment these:

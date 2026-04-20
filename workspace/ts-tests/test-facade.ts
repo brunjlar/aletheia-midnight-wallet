@@ -88,3 +88,11 @@ const _indexerUrl: string = fetchTcConfig.indexerClientConnection.indexerHttpUrl
 // common fields with optional shielded/unshielded sections.
 // WalletEntrySchema and WalletEntry type will be enabled once abstractions
 // > 2.0.0 is published (dependency on TransactionHistoryStorage).
+
+// --- Dust section in WalletEntry (pending npm release) ---
+// [evidence: facade/WalletEntry-dust-section — source-verified, npm-pending]
+// Added in upstream 37638039 (feat: add txHistory to dust wallet #331):
+// WalletEntrySchema gains optional `dust` field using DustSectionSchema.
+// mergeWalletEntries handles dust section merging via mergeDustSections.
+// Once facade 3.1.0+ is published, the WalletEntry test above should also
+// verify that WalletEntry has an optional `dust` property.

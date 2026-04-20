@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-04-19T16:22:49.206Z*
+*Extracted: 2026-04-20T17:34:35.763Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -186,6 +186,7 @@
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `DustWalletCapabilities` | type | — |
+| `DustWalletServices` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `CustomizedDustWallet` | type | — |
@@ -202,6 +203,7 @@
 | `PublicKey` | type | — |
 | `CoreWallet` | type | — |
 | `DustWalletCapabilities` | type | — |
+| `DustWalletServices` | type | — |
 | `DustWalletState` | class | — |
 | `DustWalletAPI` | type | — |
 | `CustomizedDustWallet` | type | — |
@@ -236,6 +238,10 @@
 | `NetworkId` | type | — |
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
+| `TransactionHistory` | namespace | — |
+| `DustSectionSchema` | const | — |
+| `DustUtxoInfoSchema` | const | — |
+| `mergeDustSections` | const | — |
 
 ## @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 
@@ -639,4 +645,4 @@
 | `buildTestEnvironmentVariables` | function | — |
 
 ---
-**Total: 491 symbols, 3 members across 13 packages**
+**Total: 497 symbols, 3 members across 13 packages**

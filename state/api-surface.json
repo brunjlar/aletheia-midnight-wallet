@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-04-19T16:22:49.156Z",
+  "extracted_at": "2026-04-20T17:34:35.705Z",
   "packages": [
     {
       "name": "abstractions",
@@ -640,6 +640,10 @@
               "kind": "type"
             },
             {
+              "name": "DustWalletServices",
+              "kind": "type"
+            },
+            {
               "name": "DustWalletState",
               "kind": "class"
             },
@@ -687,6 +691,10 @@
             },
             {
               "name": "DustWalletCapabilities",
+              "kind": "type"
+            },
+            {
+              "name": "DustWalletServices",
               "kind": "type"
             },
             {
@@ -824,6 +832,22 @@
             {
               "name": "CoinsAndBalances",
               "kind": "namespace"
+            },
+            {
+              "name": "TransactionHistory",
+              "kind": "namespace"
+            },
+            {
+              "name": "DustSectionSchema",
+              "kind": "const"
+            },
+            {
+              "name": "DustUtxoInfoSchema",
+              "kind": "const"
+            },
+            {
+              "name": "mergeDustSections",
+              "kind": "const"
             }
           ]
         }
