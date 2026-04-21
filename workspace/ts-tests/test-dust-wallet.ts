@@ -35,17 +35,16 @@ const stopPromise: Promise<void> = api.stop();
 // --- DustWalletServices ---
 // [evidence: dust/DustWalletServices-type — source-verified, npm-pending]
 // Added in upstream 37638039 (feat: add txHistory to dust wallet #331).
+// Fixed in upstream 8383f7bc (fix: double exporting of transactionhistory.js #336):
+//   DustSectionSchema, mergeDustSections, DustTransactionHistoryEntry moved from
+//   v1 subpath to main package path. DustUtxoInfoSchema removed from v1 re-exports.
 // DustWalletState now exposes a `services` property containing transactionHistory.
-// DustSectionSchema / DustUtxoInfoSchema / mergeDustSections provide Effect Schema
-// definitions for serializing dust transaction history entries.
-// TransactionHistory namespace exports the full service interface.
 // Once npm package is updated (3.1.0+), uncomment these:
-// import { type DustWalletServices } from '@midnight-ntwrk/wallet-sdk-dust-wallet';
-// import { DustSectionSchema, DustUtxoInfoSchema, mergeDustSections, TransactionHistory } from '@midnight-ntwrk/wallet-sdk-dust-wallet/v1';
+// import { type DustWalletServices, type DustTransactionHistoryEntry, DustSectionSchema, mergeDustSections } from '@midnight-ntwrk/wallet-sdk-dust-wallet';
+// import { TransactionHistory } from '@midnight-ntwrk/wallet-sdk-dust-wallet/v1';
 // declare const services: DustWalletServices;
 // const _txHistory: services.transactionHistory;
 // const _dustSchema: typeof DustSectionSchema = DustSectionSchema;
-// const _utxoSchema: typeof DustUtxoInfoSchema = DustUtxoInfoSchema;
 // const _merge: typeof mergeDustSections = mergeDustSections;
 
 // --- CustomDustWallet builder pattern (pending npm publish) ---

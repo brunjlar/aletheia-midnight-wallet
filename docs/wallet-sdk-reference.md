@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 3763803939b9bf32601ddb4828ef67698aaa7937 -->
-<!-- Generated: 2026-04-20T17:34:53.686Z -->
+<!-- Source: upstream/midnight-wallet @ 8383f7bcf1b2080777f9b117ec5b8adca951d13b -->
+<!-- Generated: 2026-04-21T12:12:22.763Z -->
 
 ## 1. Introduction
 
@@ -281,6 +281,9 @@ for pattern matching.
 | `DustWallet` | type | — |
 | `DustWalletClass` | type | — |
 | `CustomDustWallet` | function | — |
+| `DustTransactionHistoryEntry` | type | — |
+| `DustSectionSchema` | const | — |
+| `mergeDustSections` | const | — |
 
 #### Sub-export: `./v1`
 
@@ -325,9 +328,6 @@ for pattern matching.
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
 | `TransactionHistory` | namespace | — |
-| `DustSectionSchema` | const | — |
-| `DustUtxoInfoSchema` | const | — |
-| `mergeDustSections` | const | — |
 
 ### @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 
@@ -1461,7 +1461,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 3763803939b9bf32601ddb4828ef67698aaa7937 |
+| Wallet SDK upstream | 8383f7bcf1b2080777f9b117ec5b8adca951d13b |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-04-20T17:34:35.763Z*
+*Extracted: 2026-04-21T12:12:05.122Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -195,6 +195,9 @@
 | `DustWallet` | type | — |
 | `DustWalletClass` | type | — |
 | `CustomDustWallet` | function | — |
+| `DustTransactionHistoryEntry` | type | — |
+| `DustSectionSchema` | const | — |
+| `mergeDustSections` | const | — |
 
 ### Sub-export: `./v1`
 
@@ -239,9 +242,6 @@
 | `TotalCostParameters` | type | — |
 | `CoinsAndBalances` | namespace | — |
 | `TransactionHistory` | namespace | — |
-| `DustSectionSchema` | const | — |
-| `DustUtxoInfoSchema` | const | — |
-| `mergeDustSections` | const | — |
 
 ## @midnight-ntwrk/wallet-sdk-facade (3.0.0)
 

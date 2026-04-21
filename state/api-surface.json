@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-04-20T17:34:35.705Z",
+  "extracted_at": "2026-04-21T12:12:05.071Z",
   "packages": [
     {
       "name": "abstractions",
@@ -674,6 +674,18 @@
             {
               "name": "CustomDustWallet",
               "kind": "function"
+            },
+            {
+              "name": "DustTransactionHistoryEntry",
+              "kind": "type"
+            },
+            {
+              "name": "DustSectionSchema",
+              "kind": "const"
+            },
+            {
+              "name": "mergeDustSections",
+              "kind": "const"
             }
           ]
         },
@@ -836,18 +848,6 @@
             {
               "name": "TransactionHistory",
               "kind": "namespace"
-            },
-            {
-              "name": "DustSectionSchema",
-              "kind": "const"
-            },
-            {
-              "name": "DustUtxoInfoSchema",
-              "kind": "const"
-            },
-            {
-              "name": "mergeDustSections",
-              "kind": "const"
             }
           ]
         }
