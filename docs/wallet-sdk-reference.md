@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 8383f7bcf1b2080777f9b117ec5b8adca951d13b -->
-<!-- Generated: 2026-04-21T12:12:22.763Z -->
+<!-- Source: upstream/midnight-wallet @ f7948bc5e20122cb412f1bcd006346b0d872604f -->
+<!-- Generated: 2026-04-21T19:15:25.970Z -->
 
 ## 1. Introduction
 
@@ -730,7 +730,57 @@ for pattern matching.
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
-**Total: 497 symbols, 3 members across 13 packages**
+### @midnight-ntwrk/wallet-sdk (0.0.0)
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./address-format`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./capabilities`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./dust`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./facade`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./hd`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./proving`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./shielded`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./testing`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+#### Sub-export: `./unshielded`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+**Total: 497 symbols, 3 members across 14 packages**
 
 ---
 
@@ -1461,7 +1511,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 8383f7bcf1b2080777f9b117ec5b8adca951d13b |
+| Wallet SDK upstream | f7948bc5e20122cb412f1bcd006346b0d872604f |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

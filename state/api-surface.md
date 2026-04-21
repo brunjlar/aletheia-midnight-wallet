@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-04-21T12:12:05.122Z*
+*Extracted: 2026-04-21T19:15:04.734Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -644,5 +644,55 @@
 | `BuildTestEnvironmentVariablesOptions` | interface | — |
 | `buildTestEnvironmentVariables` | function | — |
 
+## @midnight-ntwrk/wallet-sdk (0.0.0)
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./address-format`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./capabilities`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./dust`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./facade`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./hd`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./proving`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./shielded`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./testing`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
+### Sub-export: `./unshielded`
+
+| Symbol | Kind | Members |
+|--------|------|---------|
+
 ---
-**Total: 497 symbols, 3 members across 13 packages**
+**Total: 497 symbols, 3 members across 14 packages**

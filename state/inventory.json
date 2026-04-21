@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "timestamp": "2026-04-21T12:12:19.740Z",
+  "timestamp": "2026-04-21T19:15:22.613Z",
   "repo": "midnight-wallet",
   "doc_repo": "wallet",
   "api_surface": {
-    "total_packages": 13,
+    "total_packages": 14,
     "total_symbols": 497,
     "packages": [
       {
@@ -58,6 +58,10 @@
       {
         "name": "utilities",
         "symbols": 27
+      },
+      {
+        "name": "wallet-sdk",
+        "symbols": 0
       }
     ]
   },

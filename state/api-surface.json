@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-04-21T12:12:05.071Z",
+  "extracted_at": "2026-04-21T19:15:04.679Z",
   "packages": [
     {
       "name": "abstractions",
@@ -2268,6 +2268,63 @@
               "kind": "function"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "wallet-sdk",
+      "npm_name": "@midnight-ntwrk/wallet-sdk",
+      "version": "0.0.0",
+      "entry_points": [
+        {
+          "path": ".",
+          "source_file": "packages/wallet-sdk/src/index.ts",
+          "symbols": []
+        },
+        {
+          "path": "./address-format",
+          "source_file": "packages/wallet-sdk/src/address-format.ts",
+          "symbols": []
+        },
+        {
+          "path": "./capabilities",
+          "source_file": "packages/wallet-sdk/src/capabilities.ts",
+          "symbols": []
+        },
+        {
+          "path": "./dust",
+          "source_file": "packages/wallet-sdk/src/dust.ts",
+          "symbols": []
+        },
+        {
+          "path": "./facade",
+          "source_file": "packages/wallet-sdk/src/facade.ts",
+          "symbols": []
+        },
+        {
+          "path": "./hd",
+          "source_file": "packages/wallet-sdk/src/hd.ts",
+          "symbols": []
+        },
+        {
+          "path": "./proving",
+          "source_file": "packages/wallet-sdk/src/proving.ts",
+          "symbols": []
+        },
+        {
+          "path": "./shielded",
+          "source_file": "packages/wallet-sdk/src/shielded.ts",
+          "symbols": []
+        },
+        {
+          "path": "./testing",
+          "source_file": "packages/wallet-sdk/src/testing.ts",
+          "symbols": []
+        },
+        {
+          "path": "./unshielded",
+          "source_file": "packages/wallet-sdk/src/unshielded.ts",
+          "symbols": []
         }
       ]
     }
