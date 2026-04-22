@@ -1,0 +1,46 @@
+# Expected Toolchain Versions — wallet
+#
+# DERIVED AUTOMATICALLY from upstream by
+# repos/wallet/scripts/derive-expected-toolchain.sh. Do not hand-edit;
+# rerun the script after advancing submodules.
+#
+# Sources:
+#   wallet_sdk_<pkg>_version → upstream/midnight-wallet/packages/<pkg>/package.json
+#   ledger_v8_version        → workspace/package.json
+#   midnight_node_tag        → docker-compose.yml
+#   indexer_tag              → docker-compose.yml
+#   proof_server_tag         → docker-compose.yml
+
+schema: 1
+
+# Wallet SDK packages (source: upstream midnight-wallet)
+wallet_sdk_abstractions_version: "2.0.0"
+wallet_sdk_address_format_version: "3.1.0"
+wallet_sdk_capabilities_version: "3.2.0"
+wallet_sdk_dust_wallet_version: "3.0.0"
+wallet_sdk_facade_version: "3.0.0"
+wallet_sdk_hd_version: "3.0.1"
+wallet_sdk_indexer_client_version: "1.2.0"
+wallet_sdk_node_client_version: "1.1.0"
+wallet_sdk_prover_client_version: "1.2.0"
+wallet_sdk_runtime_version: "1.0.2"
+wallet_sdk_shielded_version: "2.1.0"
+wallet_sdk_unshielded_wallet_version: "2.1.0"
+wallet_sdk_utilities_version: "1.1.0"
+
+# Ledger shim (pinned in workspace/package.json)
+ledger_v8_version: "8.0.0"
+
+# Node.js major (inside toolchain Docker image)
+node_major: "22"
+
+# Docker image tags (digests captured at runtime)
+midnight_node_tag: "0.22.0"
+indexer_tag: "4.0.0"
+proof_server_tag: "8.0.3"
+
+# Provenance
+_derivation:
+  wallet_upstream: "8383f7bc"
+  wallet_doc_repo: "7786073"
+  derived_at:      "2026-04-22T13:24:33Z"

@@ -70,14 +70,57 @@ function runVerifyScripts(tier) {
 
 const results = runVerifyScripts();
 
+// Capture the environment fingerprint so the produced evidence carries
+// an authoritative record of versions + source pins. Conforms to
+// docs/design/fingerprint-schema.md at the coordinator level.
+function collectFingerprint() {
+  try {
+    // Script path resolution: prefer mounted /app/scripts (Docker); fall
+    // back to the coordinator-relative path (host) — the collector itself
+    // handles both host and --docker invocation modes internally.
+    const candidates = [
+      '/app/scripts/collect-fingerprint.sh',
+      process.env.SCRIPTS_DIR && join(process.env.SCRIPTS_DIR, 'collect-fingerprint.sh'),
+      join(process.env.REPO_ROOT || '.', 'scripts', 'collect-fingerprint.sh'),
+    ].filter(Boolean);
+    let script = null;
+    for (const c of candidates) {
+      if (existsSync(c)) { script = c; break; }
+    }
+    if (!script) throw new Error('collect-fingerprint.sh not found in any candidate path');
+    const flag = process.env.IN_DOCKER === 'true' ? ' --docker' : '';
+    const json = execSync(`bash "${script}"${flag}`, { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 });
+    return JSON.parse(json);
+  } catch (err) {
+    return {
+      schema_version: 1,
+      captured_at: new Date().toISOString(),
+      toolchain: {},
+      runtime: { method: 'fingerprint-collection-failed', error: err.message.slice(0, 200) },
+      verification: {
+        verified_against_expected: false,
+        mismatches: null,
+        expected_toolchain_file: 'state/expected-toolchain.yaml',
+      },
+    };
+  }
+}
+
+const fingerprint = collectFingerprint();
+
 const summary = {
   generated_at: new Date().toISOString(),
   total: results.length,
   passing: results.filter(r => r.status === 'pass').length,
   failing: results.filter(r => r.status === 'fail').length,
   errors: results.filter(r => r.status === 'error').length,
+  environment_fingerprint: fingerprint,
   results,
 };
 
 writeFileSync(join(DOCS_DIR, 'evidence.json'), JSON.stringify(summary, null, 2));
 console.log(`\nEvidence: ${summary.passing}/${summary.total} passing`);
+const mm = fingerprint?.verification?.mismatches;
+if (mm && mm.length) {
+  console.log(`Environment mismatches detected (${mm.length}): see evidence.json#environment_fingerprint.verification.mismatches`);
+}
