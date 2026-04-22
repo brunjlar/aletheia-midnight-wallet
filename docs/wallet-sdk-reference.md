@@ -2,7 +2,7 @@
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
 <!-- Source: upstream/midnight-wallet @ 79d42ff58cd95c27393c6f8da09aa39ce896e1b2 -->
-<!-- Generated: 2026-04-22T11:50:33.187Z -->
+<!-- Generated: 2026-04-22T17:49:37.148Z -->
 
 ## 1. Introduction
 
@@ -22,7 +22,7 @@ The SDK follows a layered architecture with 13 packages:
 Layer 1: Foundation
   abstractions    — Branded types (WalletSeed, WalletState, ProtocolVersion, ...)
   utilities       — Domain-agnostic operations (SafeBigInt, BlobOps, ...)
-  hd              — HD wallet key derivation (BIP32/BIP39, BIP-44)
+  hd              — HD wallet key derivation (BIP32/BIP39, CIP-1852)
   address-format  — Bech32m address encoding (mn_ prefix)
 
 Layer 2: Infrastructure Clients
@@ -54,11 +54,7 @@ Midnight implements three distinct token types:
 |-------|--------|---------|---------|
 | Custom shielded | ShieldedWallet | ZK-private | Arbitrary tokens with zero-knowledge proofs |
 | Night (unshielded) | UnshieldedWallet | Public | Native token for transfers and staking |
-| Dust | DustWallet | Shielded (commitment-based) | Fee token with time-dependent generation |
-
-> **Note:** DUST balances are hidden behind perfect-hiding Pedersen
-> commitments; only the DustPublicKey (linking registration to a NIGHT
-> address) is visible on-chain.
+| Dust | DustWallet | Public | Fee token with time-dependent generation |
 
 ### 1.3 Variant/Runtime Pattern
 
@@ -85,8 +81,8 @@ for pattern matching.
 
 | Tier | Passing | Failing | Errors | Total |
 |------|---------|---------|--------|-------|
-| tier1 | 97 | 0 | 0 | 97 |
-| **Total** | **97** | **0** | | **97** |
+| tier1 | 87 | 2 | 0 | 89 |
+| **Total** | **87** | **2** | | **89** |
 
 ---
 
@@ -870,11 +866,8 @@ as a namespace module containing related functions.
 Hierarchical deterministic key derivation following BIP32/BIP39 with
 Midnight's derivation path: `m/44'/2400'/{account}'/{role}/{index}`.
 
-Coin type `2400` is Midnight's registered BIP44 coin type
-(Source: HDWallet.ts:35-36). The role-based sub-path design is inspired
-by Cardano's CIP-1852 approach but uses different purpose (44 vs 1852)
-and coin type (2400 vs 1815) values. Five roles partition keys by
-purpose:
+Coin type `2400` is Midnight's registered BIP44 coin type. Five roles
+partition keys by purpose:
 
 | Role | Index | Purpose |
 |------|-------|---------|
@@ -1023,17 +1016,7 @@ events (UTxO creation/spending, shielded transactions, dust generation).
 **Note:** This package also exports ~120 auto-generated GraphQL types
 from the indexer schema (see Appendix A).
 
-| Test | Status | Detail |
-|------|--------|--------|
-| indexer-client/Connect-query-exists | PASS | — |
-| indexer-client/Disconnect-query-exists | PASS | — |
-| indexer-client/BlockHash-query-exists | PASS | — |
-| indexer-client/TransactionStatus-query-exists | PASS | — |
-| indexer-client/FetchTermsAndConditions-query-exists | PASS | — |
-| indexer-client/QueryClient-is-context-tag | PASS | — |
-| indexer-client/SubscriptionClient-is-context-tag | PASS | — |
-| indexer-client/ConnectionHelper-deriveWebSocketUrl | PASS | — |
-| indexer-client/QueryRunner-runPromise | PASS | — |
+*No evidence collected yet.*
 
 ### 4.3 Prover Client (`@midnight-ntwrk/wallet-sdk-prover-client`)
 
@@ -1464,15 +1447,7 @@ and package.
 | hd/different-accounts-different-keys | tier1 | pass |
 | hd/composite-role-keys | tier1 | pass |
 | hd/deterministic-derivation | tier1 | pass |
-| indexer-client/Connect-query-exists | tier1 | pass |
-| indexer-client/Disconnect-query-exists | tier1 | pass |
-| indexer-client/BlockHash-query-exists | tier1 | pass |
-| indexer-client/TransactionStatus-query-exists | tier1 | pass |
-| indexer-client/FetchTermsAndConditions-query-exists | tier1 | pass |
-| indexer-client/QueryClient-is-context-tag | tier1 | pass |
-| indexer-client/SubscriptionClient-is-context-tag | tier1 | pass |
-| indexer-client/ConnectionHelper-deriveWebSocketUrl | tier1 | pass |
-| indexer-client/QueryRunner-runPromise | tier1 | pass |
+| tier1-indexer-client.mjs/error | tier1 | fail |
 | utilities/SafeBigInt-namespace-exists | tier1 | pass |
 | utilities/DateOps-namespace-exists | tier1 | pass |
 | utilities/ArrayOps-namespace-exists | tier1 | pass |
@@ -1506,7 +1481,7 @@ and package.
 | typecheck/address-format | tier1 | pass |
 | typecheck/capabilities | tier1 | pass |
 | typecheck/dust-wallet | tier1 | pass |
-| typecheck/facade | tier1 | pass |
+| typecheck/facade | tier1 | fail |
 | typecheck/hd | tier1 | pass |
 | typecheck/node-client | tier1 | pass |
 | typecheck/prover-client | tier1 | pass |
