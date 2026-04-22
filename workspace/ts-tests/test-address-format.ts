@@ -3,7 +3,6 @@
 
 import {
   mainnet,
-  type NetworkId,
   type FormatContext,
   type Field,
   BLSScalar,
@@ -17,6 +16,11 @@ import {
   UnshieldedAddress,
   DustAddress,
 } from '@midnight-ntwrk/wallet-sdk-address-format';
+
+// NetworkId is no longer exported as a type (removed in #344).
+// Use FormatContext['networkId'] to access the type, or inline
+// as `string | typeof mainnet`.
+type NetworkId = FormatContext['networkId'];
 
 // --- Field constants ---
 // [evidence: address-format/BLSScalar-field-definition]

@@ -1,6 +1,6 @@
 # Wallet SDK — API Surface
 
-*Extracted: 2026-04-22T11:50:12.418Z*
+*Extracted: 2026-04-22T18:43:43.615Z*
 
 ## @midnight-ntwrk/wallet-sdk-abstractions (2.0.0)
 
@@ -22,7 +22,6 @@
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `mainnet` | const | — |
-| `NetworkId` | type | — |
 | `FormatContext` | type | — |
 | `Field` | type | — |
 | `BLSScalar` | const | — |
@@ -695,4 +694,4 @@
 |--------|------|---------|
 
 ---
-**Total: 497 symbols, 3 members across 14 packages**
+**Total: 496 symbols, 3 members across 14 packages**

@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "timestamp": "2026-04-22T11:50:29.662Z",
+  "timestamp": "2026-04-22T18:43:59.140Z",
   "repo": "midnight-wallet",
   "doc_repo": "wallet",
   "api_surface": {
     "total_packages": 14,
-    "total_symbols": 497,
+    "total_symbols": 496,
     "packages": [
       {
         "name": "abstractions",
@@ -13,7 +13,7 @@
       },
       {
         "name": "address-format",
-        "symbols": 17
+        "symbols": 16
       },
       {
         "name": "capabilities",

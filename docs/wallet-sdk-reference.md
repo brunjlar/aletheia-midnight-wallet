@@ -1,8 +1,8 @@
 # Midnight Wallet SDK Reference
 
 <!-- Assembled by tools/assemble-wallet-docs.mjs -->
-<!-- Source: upstream/midnight-wallet @ 79d42ff58cd95c27393c6f8da09aa39ce896e1b2 -->
-<!-- Generated: 2026-04-22T17:49:37.148Z -->
+<!-- Source: upstream/midnight-wallet @ 5c28dd2f0437f5ac8c3f779089d1e1f1041e9ca9 -->
+<!-- Generated: 2026-04-22T18:44:02.663Z -->
 
 ## 1. Introduction
 
@@ -81,8 +81,8 @@ for pattern matching.
 
 | Tier | Passing | Failing | Errors | Total |
 |------|---------|---------|--------|-------|
-| tier1 | 87 | 2 | 0 | 89 |
-| **Total** | **87** | **2** | | **89** |
+| tier1 | 97 | 0 | 0 | 97 |
+| **Total** | **97** | **0** | | **97** |
 
 ---
 
@@ -108,7 +108,6 @@ for pattern matching.
 | Symbol | Kind | Members |
 |--------|------|---------|
 | `mainnet` | const | — |
-| `NetworkId` | type | — |
 | `FormatContext` | type | — |
 | `Field` | type | — |
 | `BLSScalar` | const | — |
@@ -780,7 +779,7 @@ for pattern matching.
 | Symbol | Kind | Members |
 |--------|------|---------|
 
-**Total: 497 symbols, 3 members across 14 packages**
+**Total: 496 symbols, 3 members across 14 packages**
 
 ---
 
@@ -1016,7 +1015,17 @@ events (UTxO creation/spending, shielded transactions, dust generation).
 **Note:** This package also exports ~120 auto-generated GraphQL types
 from the indexer schema (see Appendix A).
 
-*No evidence collected yet.*
+| Test | Status | Detail |
+|------|--------|--------|
+| indexer-client/Connect-query-exists | PASS | — |
+| indexer-client/Disconnect-query-exists | PASS | — |
+| indexer-client/BlockHash-query-exists | PASS | — |
+| indexer-client/TransactionStatus-query-exists | PASS | — |
+| indexer-client/FetchTermsAndConditions-query-exists | PASS | — |
+| indexer-client/QueryClient-is-context-tag | PASS | — |
+| indexer-client/SubscriptionClient-is-context-tag | PASS | — |
+| indexer-client/ConnectionHelper-deriveWebSocketUrl | PASS | — |
+| indexer-client/QueryRunner-runPromise | PASS | — |
 
 ### 4.3 Prover Client (`@midnight-ntwrk/wallet-sdk-prover-client`)
 
@@ -1447,7 +1456,15 @@ and package.
 | hd/different-accounts-different-keys | tier1 | pass |
 | hd/composite-role-keys | tier1 | pass |
 | hd/deterministic-derivation | tier1 | pass |
-| tier1-indexer-client.mjs/error | tier1 | fail |
+| indexer-client/Connect-query-exists | tier1 | pass |
+| indexer-client/Disconnect-query-exists | tier1 | pass |
+| indexer-client/BlockHash-query-exists | tier1 | pass |
+| indexer-client/TransactionStatus-query-exists | tier1 | pass |
+| indexer-client/FetchTermsAndConditions-query-exists | tier1 | pass |
+| indexer-client/QueryClient-is-context-tag | tier1 | pass |
+| indexer-client/SubscriptionClient-is-context-tag | tier1 | pass |
+| indexer-client/ConnectionHelper-deriveWebSocketUrl | tier1 | pass |
+| indexer-client/QueryRunner-runPromise | tier1 | pass |
 | utilities/SafeBigInt-namespace-exists | tier1 | pass |
 | utilities/DateOps-namespace-exists | tier1 | pass |
 | utilities/ArrayOps-namespace-exists | tier1 | pass |
@@ -1481,7 +1498,7 @@ and package.
 | typecheck/address-format | tier1 | pass |
 | typecheck/capabilities | tier1 | pass |
 | typecheck/dust-wallet | tier1 | pass |
-| typecheck/facade | tier1 | fail |
+| typecheck/facade | tier1 | pass |
 | typecheck/hd | tier1 | pass |
 | typecheck/node-client | tier1 | pass |
 | typecheck/prover-client | tier1 | pass |
@@ -1493,7 +1510,7 @@ and package.
 
 | Component | Version |
 |-----------|---------|
-| Wallet SDK upstream | 79d42ff58cd95c27393c6f8da09aa39ce896e1b2 |
+| Wallet SDK upstream | 5c28dd2f0437f5ac8c3f779089d1e1f1041e9ca9 |
 | Node | 0.22.0-rc.6 |
 | Indexer | 4.0.0-rc.5 |
 | Proof Server | 8.0.2 |

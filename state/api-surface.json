@@ -1,5 +1,5 @@
 {
-  "extracted_at": "2026-04-22T11:50:12.366Z",
+  "extracted_at": "2026-04-22T18:43:43.562Z",
   "packages": [
     {
       "name": "abstractions",
@@ -66,10 +66,6 @@
             {
               "name": "mainnet",
               "kind": "const"
-            },
-            {
-              "name": "NetworkId",
-              "kind": "type"
             },
             {
               "name": "FormatContext",

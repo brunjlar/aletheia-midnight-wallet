@@ -1,63 +1,63 @@
 {
-  "generated_at": "2026-04-22T13:31:40.840Z",
-  "total": 89,
-  "passing": 87,
-  "failing": 2,
+  "generated_at": "2026-04-22T18:43:51.406Z",
+  "total": 97,
+  "passing": 97,
+  "failing": 0,
   "errors": 0,
   "environment_fingerprint": {
     "schema_version": 1,
-    "captured_at": "2026-04-22T13:31:40Z",
+    "captured_at": "2026-04-22T18:43:51Z",
     "toolchain": {
       "wallet_sdk_abstractions": {
         "version": "2.0.0",
         "sha256_prefix": "61c753226009f5a1"
       },
       "wallet_sdk_address_format": {
-        "version": "3.0.1",
-        "sha256_prefix": "33a4e74dea819346"
+        "version": "3.1.0",
+        "sha256_prefix": "20c1669c47d99200"
       },
       "wallet_sdk_capabilities": {
-        "version": "3.1.0",
+        "version": "3.2.0",
         "sha256_prefix": "1b10af873b16de2d"
       },
       "wallet_sdk_dust_wallet": {
-        "version": "2.0.0",
+        "version": "3.0.0",
         "sha256_prefix": "d23ba13db86c9624"
       },
       "wallet_sdk_facade": {
-        "version": "2.0.0",
-        "sha256_prefix": "c488f524c182b424"
+        "version": "3.0.0",
+        "sha256_prefix": "688988ca99254b43"
       },
       "wallet_sdk_hd": {
         "version": "3.0.1",
         "sha256_prefix": "ec6566edb0e30393"
       },
       "wallet_sdk_indexer_client": {
-        "version": "1.1.0",
+        "version": "1.2.0",
         "sha256_prefix": "125cfad4fc7093ca"
       },
       "wallet_sdk_node_client": {
-        "version": "1.0.1",
+        "version": "1.1.0",
         "sha256_prefix": "46ac7369a4b51ff0"
       },
       "wallet_sdk_prover_client": {
-        "version": "1.1.0",
+        "version": "1.2.0",
         "sha256_prefix": "4ea5dfddf044e556"
       },
       "wallet_sdk_runtime": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "sha256_prefix": "5a0703792a02e125"
       },
       "wallet_sdk_shielded": {
-        "version": "2.0.0",
+        "version": "2.1.0",
         "sha256_prefix": "5a9f52a34027961d"
       },
       "wallet_sdk_unshielded_wallet": {
-        "version": "2.0.0",
+        "version": "2.1.0",
         "sha256_prefix": "4742660e4840057a"
       },
       "wallet_sdk_utilities": {
-        "version": "1.0.1",
+        "version": "1.1.0",
         "sha256_prefix": "d88fc89628cd7e24"
       },
       "ledger_v7": {
@@ -84,17 +84,6 @@
     "verification": {
       "verified_against_expected": true,
       "mismatches": [
-        "wallet_sdk_address_format_version: expected=3.1.0 actual=3.0.1",
-        "wallet_sdk_capabilities_version: expected=3.2.0 actual=3.1.0",
-        "wallet_sdk_dust_wallet_version: expected=3.0.0 actual=2.0.0",
-        "wallet_sdk_facade_version: expected=3.0.0 actual=2.0.0",
-        "wallet_sdk_indexer_client_version: expected=1.2.0 actual=1.1.0",
-        "wallet_sdk_node_client_version: expected=1.1.0 actual=1.0.1",
-        "wallet_sdk_prover_client_version: expected=1.2.0 actual=1.1.0",
-        "wallet_sdk_runtime_version: expected=1.0.2 actual=1.0.1",
-        "wallet_sdk_shielded_version: expected=2.1.0 actual=2.0.0",
-        "wallet_sdk_unshielded_wallet_version: expected=2.1.0 actual=2.0.0",
-        "wallet_sdk_utilities_version: expected=1.1.0 actual=1.0.1",
         "ledger_v8_version: expected=8.0.0 actual=8.0.0-rc.5"
       ],
       "expected_toolchain_file": "state/expected-toolchain.yaml"
@@ -480,11 +469,67 @@
       "detail": null
     },
     {
-      "name": "tier1-indexer-client.mjs/error",
-      "status": "fail",
+      "name": "indexer-client/Connect-query-exists",
+      "status": "pass",
       "tier": "tier1",
       "category": "standalone",
-      "detail": "Command failed: node /app/workspace/ts-tests/tier1-indexer-client.mjs\nfile:///app/workspace/ts-tests/tier1-indexer-client.mjs:10\n  FetchTermsAndConditions,\n  ^^^^^^^^^^^^^^^^^^^^^^^\nSyntaxError: The r"
+      "detail": null
+    },
+    {
+      "name": "indexer-client/Disconnect-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/BlockHash-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/TransactionStatus-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/FetchTermsAndConditions-query-exists",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/QueryClient-is-context-tag",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/SubscriptionClient-is-context-tag",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/ConnectionHelper-deriveWebSocketUrl",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
+    },
+    {
+      "name": "indexer-client/QueryRunner-runPromise",
+      "status": "pass",
+      "tier": "tier1",
+      "category": "standalone",
+      "detail": null
     },
     {
       "name": "utilities/SafeBigInt-namespace-exists",
@@ -684,10 +729,10 @@
     },
     {
       "name": "typecheck/facade",
-      "status": "fail",
+      "status": "pass",
       "tier": "tier1",
       "category": "typecheck",
-      "detail": "TypeScript compilation errors"
+      "detail": null
     },
     {
       "name": "typecheck/hd",
