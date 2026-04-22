@@ -22,7 +22,7 @@ The SDK follows a layered architecture with 13 packages:
 Layer 1: Foundation
   abstractions    — Branded types (WalletSeed, WalletState, ProtocolVersion, ...)
   utilities       — Domain-agnostic operations (SafeBigInt, BlobOps, ...)
-  hd              — HD wallet key derivation (BIP32/BIP39, CIP-1852)
+  hd              — HD wallet key derivation (BIP32/BIP39, BIP-44)
   address-format  — Bech32m address encoding (mn_ prefix)
 
 Layer 2: Infrastructure Clients
@@ -54,7 +54,11 @@ Midnight implements three distinct token types:
 |-------|--------|---------|---------|
 | Custom shielded | ShieldedWallet | ZK-private | Arbitrary tokens with zero-knowledge proofs |
 | Night (unshielded) | UnshieldedWallet | Public | Native token for transfers and staking |
-| Dust | DustWallet | Public | Fee token with time-dependent generation |
+| Dust | DustWallet | Shielded (commitment-based) | Fee token with time-dependent generation |
+
+> **Note:** DUST balances are hidden behind perfect-hiding Pedersen
+> commitments; only the DustPublicKey (linking registration to a NIGHT
+> address) is visible on-chain.
 
 ### 1.3 Variant/Runtime Pattern
 
@@ -816,8 +820,11 @@ as a namespace module containing related functions.
 Hierarchical deterministic key derivation following BIP32/BIP39 with
 Midnight's derivation path: `m/44'/2400'/{account}'/{role}/{index}`.
 
-Coin type `2400` is Midnight's registered BIP44 coin type. Five roles
-partition keys by purpose:
+Coin type `2400` is Midnight's registered BIP44 coin type
+(Source: HDWallet.ts:35-36). The role-based sub-path design is inspired
+by Cardano's CIP-1852 approach but uses different purpose (44 vs 1852)
+and coin type (2400 vs 1815) values. Five roles partition keys by
+purpose:
 
 | Role | Index | Purpose |
 |------|-------|---------|
