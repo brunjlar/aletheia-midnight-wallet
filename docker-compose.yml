@@ -9,6 +9,7 @@ services:
       - ./scripts:/app/scripts
       - ./docs:/app/docs
       - ./state:/app/state
+      - ./artifacts:/app/artifacts
       - ./upstream:/app/upstream:ro
       - node_modules:/app/workspace/node_modules
     environment:
